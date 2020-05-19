@@ -1,0 +1,55 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al Inicio",
+    "path": "../"
+  },  
+  { 
+    "id": 1,
+    "icon": "video",
+    "slug": "componentes-bs",
+    "title": "1. Componentes",
+    "breadcrumb": ["Inicio","Introducción"],
+    "path": "pages/1-tema.html",    
+    "submenu": [
+      {
+        "id": 1.1,
+        "icon": "document",
+        "slug": "componentes-bs",
+        "title": "Alerts",
+        "anchor": "alerts"
+      },
+      {
+        "id": 1.2,
+        "icon": "document",
+        "slug": "componentes-bs",
+        "title": "Badges",
+        "anchor": "badges"
+      }
+    ]   
+  },
+
+  {
+    "id": 2,
+    "icon": "video",
+    "slug": "tema-2",
+    "title": "2. Título Tema",
+    "breadcrumb": [
+      "Inicio",
+      "Tema 2"
+    ],
+    "path": "pages/2-tema.html"
+  },
+  {
+    "id": 3,
+    "icon": "video",
+    "slug": "tema-3",
+    "title": "3. Título Tema",
+    "breadcrumb": [
+      "Inicio",
+      "Tema 3"
+    ],
+    "path": "pages/3-tema.html"
+  }
+]

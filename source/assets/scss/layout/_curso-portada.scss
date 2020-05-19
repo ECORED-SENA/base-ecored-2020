@@ -1,0 +1,34 @@
+.curso-subtitulo {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $primary;
+}
+
+.curso-titulo {
+    color: $primary;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.curso-descripcion {
+    color: $primary;
+    font-weight: normal;
+}
+
+.theme-dark {
+    .curso-subtitulo,
+    .curso-titulo,
+    .curso-descripcion {
+        color: $white !important;
+    }
+}
+
+.theme-light {
+    .curso-subtitulo,
+    .curso-titulo,
+    .curso-descripcion {
+        color: $primary !important;
+    }
+}

@@ -1,0 +1,98 @@
+include ../mixins/functions
+
++pageHeader('Titulo del Tema', 'assets/images/header/header_media.svg')
+
+.container
+
+    .header
+        .header-body
+            h1.header-title 1. Tipografía
+            p.header-subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    .card
+        .card-body
+            .row
+                .col-xl-6
+                    // Headings
+                    h1 h1. Bootstrap heading
+                    h2 h2. Bootstrap heading
+                    h3 h3. Bootstrap heading
+                    h4 h4. Bootstrap heading
+                    h5 h5. Bootstrap heading
+                    h6 h6. Bootstrap heading
+                .col-xl-6
+                    // Text
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua.
+                    // Text
+                    p.text-muted
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                    // Text
+                    p
+                        a(href='#!') Link example
+                // / .row
+
+    #alerts
+        // Header
+        .header.mt-md-5
+            .header-body
+                // Title
+                h1.header-title Alerts
+                // Subtitle
+                p.header-subtitle
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    a(target='_blank', href='http://getbootstrap.com/docs/4.1/components/alerts/') official Bootstrap documentation
+
+        // Card
+        .card
+            .card-body
+                // Alert
+                .alert.alert-primary(role='alert') A simple primary alert—check it out!
+                // Alert
+                .alert.alert-secondary(role='alert') A simple secondary alert—check it out!
+                // Alert
+                .alert.alert-success(role='alert')
+                // Heading
+                h4.alert-heading Well done!
+                // Text
+                .alert.alert-danger.alert-dismissible.fade.show(role='alert')
+                    strong Danger Will Robinson!
+                    | 				This is a dismissable alert!
+                    // Button
+                    button.close(type='button', data-dismiss='alert', aria-label='Close')
+                    span(aria-hidden='true') ×
+                // Alert
+                .alert.alert-warning.alert-dismissible.fade.show(role='alert')
+                    strong Holy guacamole!
+                    |  Notice
+                    | 				how the text/UI have high contrast?
+                    // Button
+                    button.close(type='button', data-dismiss='alert', aria-label='Close')
+                    span(aria-hidden='true') ×
+                // Alert
+                .alert.alert-info(role='alert') A simple info alert—check it out!
+                // Alert
+                .alert.alert-light(role='alert') A simple light alert—check it out!
+                // Alert
+                .alert.alert-dark(role='alert') A simple dark alert—check it out!
+
+    #badges
+        // Header
+        .header.mt-md-5
+            .header-body
+                // Title
+                h1.header-title Badges
+                // Subtitle
+                // Card
+                .card
+                    .card-body
+                        // Alert
+                        span.badge.badge-primary Primary
+                        span.badge.badge-secondary Secondary
+                        span.badge.badge-success Success
+                        span.badge.badge-danger Danger
+                        span.badge.badge-warning Warning
+                        span.badge.badge-info Info
+                        span.badge.badge-light Light
+                        span.badge.badge-dark Dark

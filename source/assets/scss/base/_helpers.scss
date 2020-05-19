@@ -1,0 +1,76 @@
+.bg-base-light {
+    background-color: $base-color-light;
+}
+
+.text-small {
+    font-size: .85em;
+}
+
+.icon {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 15px -4px 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    &.btnclose {
+        background-image: url('../images/icons/icon_close.svg');
+    }    
+    &.bars {
+        background-image: url('../images/icons/icon_nav.svg');
+    }
+    &.bibliography {
+        background-image: url('../images/icons/icon_bibliography.svg');
+    }
+    &.cc {
+        background-image: url('../images/icons/icon_cc.svg');
+    }
+    &.chevron {
+        background-image: url('../images/icons/icon_chevron.svg');
+    }
+    &.document {
+        background-image: url('../images/icons/icon_document.svg');
+    }
+    &.documents {
+        background-image: url('../images/icons/icon_documents.svg');
+    }
+    &.downloadPdf {
+        background-image: url('../images/icons/icon_downloadPdf.svg');
+    }
+    &.game {
+        background-image: url('../images/icons/icon_game.svg');
+    }
+    &.glossary {
+        background-image: url('../images/icons/icon_glosary.svg');
+    }
+    &.index {
+        background-image: url('../images/icons/icon_index.svg');
+    }
+    &.pdf {
+        background-image: url('../images/icons/icon_pdf.svg');
+    }
+    &.reference {
+        background-image: url('../images/icons/icon_reference.svg');
+        width: 40px;
+        height: 40px;
+    }
+    &.sena {
+        background-image: url('../images/icons/icon_sena.svg');
+    }
+    &.tablePdf {
+        background-image: url('../images/icons/icon_table_pdf.svg');
+    }
+    &.tableVideo {
+        background-image: url('../images/icons/icon_table_video.svg');
+    }
+    &.tableWeb {
+        background-image: url('../images/icons/icon_table_web.svg');
+    }
+    &.video {
+        background-image: url('../images/icons/icon_video.svg');
+    }
+}

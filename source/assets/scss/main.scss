@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import 'base/variables';
+@import './vendor/dashkit/variables';
+@import './vendor/bootstrap';
+@import './vendor/dashkit/dashkit';
+
+@import 'base/base';
+@import 'base/helpers';
+
+@import 'layout/divider';
+@import 'layout/curso-topbar';
+@import 'layout/curso-portada';
+
+@import 'layout/page-main';
+@import 'layout/aside-contenidos';
+
+@import 'layout/footer';
+
+@import 'modulos/curso-presentacion';
+@import 'modulos/btn-menu-responsive';
+@import 'modulos/glossary';

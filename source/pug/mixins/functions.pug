@@ -1,0 +1,100 @@
+mixin pageHeader(tituloTema, srcImagen)
+    .page-header.theme-light.mb-5
+
+        .container
+
+            .row.align-items-center
+
+                .col-12.col-lg-6
+
+                    h3#curso-titulo-componente.curso-subtitulo Título del componente formativo
+                    h1#curso-titulo-tema.curso-titulo= tituloTema
+
+                    .brand-line-primary
+
+                .col-12.col-lg-6
+                    .d-none.d-lg-block
+                        img(src= srcImagen)
+
+mixin navTemaItem(numero, titulo, ruta)
+    li.list-group-item.nav-tema-item
+        .row.align-items-center
+            .col-auto
+                .avatar.avatar-sm
+                    span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold= numero
+            .col.ml-n2
+                span.nav-tema-item__titulo 
+                    a(href= ruta)= titulo
+            .col-auto                                            
+                a(href= ruta).btn.btn-light.nav-tema-item__btn
+                    | Ver más
+    
+    
+mixin creditosFooter(ruta)
+    footer#creditos.footer
+        .container
+
+            h1 Créditos               
+            .brand-line-primary
+
+            .row
+                .col-12.col-md-5
+                    h3.footer-subtitulo Contenido Instruccional
+
+                    p.footer-texto
+                        | #[strong Nombre completo ]<br/>   
+                        | #[strong Nombre completo ]<br/>                  
+                        span.text-small Instructores<br/>
+
+                    p.footer-texto
+                        | #[strong Nombre completo ]<br/>   
+                        | #[strong Nombre completo ]<br/>                  
+                        span.text-small Diseño instruccional<br/>
+
+
+                    p.footer-texto
+                        | #[strong Gloria Lee ]<br/>   
+                        span.text-small Responsable del equipo<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Nombre del Centro 
+                        br
+                        span.text-small Ubicación
+
+                        
+                .col-12.col-md-5
+                    h3.footer-subtitulo Diseño y desarrollo de recursos educativos digitales
+
+                    p.footer-texto
+                        | #[strong Lady Adriana Ariza Luque ]<br/>   
+                        | #[strong Daniel Ricardo Mutis Gomez ]<br/>                  
+                        | #[strong Eulises Orduz Amezquita ]<br/>                       
+                        | #[strong Nelson Iván Vera Briceño]<br/>
+                        | #[strong José Jaime Luis Tang Pinzón]<br/>
+                        | #[strong Carlos Julian Ramirez Benitez]<br/>
+                        | #[strong Leyson Fabian Castaño Perez]<br/>
+                        | #[strong Luis Gabriel Urueta Alvarez]<br/> 
+                        span.text-small Diseño Web & Producción Audiovisual<br/>
+
+                    p.footer-texto
+                        | #[strong Francisco J. Lizcano Reyes ]<br/>   
+                        span.text-small Responsable del equipo<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA   
+                        br
+                        span.text-small Floridablanca, Santander                   
+
+                .col-12.col-md-2  
+                    .d-flex.flex-column.justify-content-center
+                        img(src= ruta)
+
+    section#cc
+        .container
+            .d-flex.flex-column.flex-sm-row
+                span.pr-3
+                    i.icon.cc
+            
+                span
+                    | Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que
+                    | el trabajo original.
