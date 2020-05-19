@@ -44,7 +44,7 @@ const paths = {
   jsGlobal: {
     src: [
       `${src}/js/global/router.js`,
-      `${src}/js/global/app.js`,
+      `${src}/js/global/jarviscode.js`,
     ],
     fileName: "global.js",
     dest: `${pub}/assets/js`,

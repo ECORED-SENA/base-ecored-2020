@@ -252,7 +252,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                     $.routes.find('path').routeTo({ slug: hashPageControl });
 
-
+                    $('#page-main-header').hide();
+                    
                     $('.menu-main__link--active').removeClass('menu-main__link--active');
                     $('.menu-secondary__link--active').removeClass('menu-secondary__link--active');
                     $(this).addClass('menu-main__link--active');
