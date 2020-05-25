@@ -35,6 +35,7 @@ const paths = {
   pugRoot: {
     src: `${src}/pug/*.pug`,
     inc: `${src}/pug/includes/**/*.{pug,html}`,
+    mixins: `${src}/pug/mixins/**/*.{pug,html}`,
     dest: `${pub}/`,
   },
   pugPages: {
@@ -42,10 +43,7 @@ const paths = {
     dest: `${pub}/pages`,
   },
   jsGlobal: {
-    src: [
-      `${src}/js/global/router.js`,
-      `${src}/js/global/jarviscode.js`,
-    ],
+    src: [`${src}/js/global/router.js`, `${src}/js/global/jarviscode.js`],
     fileName: "global.js",
     dest: `${pub}/assets/js`,
   },
@@ -221,7 +219,7 @@ gulp.task('servidor', done => {
 
 
 gulp.task('watch', done => {  
-  gulp.watch([paths.pugRoot.src, paths.pugRoot.inc, paths.pugPages.src], gulp.series('pugRoot','pugPages'));
+  gulp.watch([paths.pugRoot.src, paths.pugRoot.inc, paths.pugPages.src, paths.pugRoot.mixins], gulp.series('pugRoot','pugPages'));
   gulp.watch(paths.sass.inc, gulp.series('sass'));
   gulp.watch(paths.cssVendor.src, gulp.series("cssVendor"));
   gulp.watch(paths.json.src, gulp.series('json'))
