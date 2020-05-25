@@ -7,7 +7,7 @@
   },  
   { 
     "id": 1,
-    "icon": "video",
+    "icon": "fa fa-play-circle",
     "slug": "componentes-bs",
     "title": "1. Componentes",
     "breadcrumb": ["Inicio","Introducción"],
@@ -15,14 +15,14 @@
     "submenu": [
       {
         "id": 1.1,
-        "icon": "document",
+        "icon": "fa fa-file-text",
         "slug": "componentes-bs",
         "title": "Alerts",
         "anchor": "alerts"
       },
       {
         "id": 1.2,
-        "icon": "document",
+        "icon": "fa fa-file-text",
         "slug": "componentes-bs",
         "title": "Badges",
         "anchor": "badges"
@@ -32,7 +32,7 @@
 
   {
     "id": 2,
-    "icon": "video",
+    "icon": "fa fa-play-circle",
     "slug": "tema-2",
     "title": "2. Título Tema",
     "breadcrumb": [
@@ -43,7 +43,7 @@
   },
   {
     "id": 3,
-    "icon": "video",
+    "icon": "fa fa-play-circle",
     "slug": "tema-3",
     "title": "3. Título Tema",
     "breadcrumb": [

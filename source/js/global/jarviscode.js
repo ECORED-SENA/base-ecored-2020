@@ -28,7 +28,7 @@ function crearMenuMain(menu) {
         }
 
         if (button.slug == "external" || button.slug == "externo" || button.slug == "pdf") {
-            menu_main_li = menu_main_li + '<li class="menu-main__item"><a id="' + idTag + '" class="menu-main__link" href="' + button.path + '"><span class="menu-main__texto">' + button.title + '</span><span class="menu-main__icono"><i class="icon ' + button.icon + '"></i></span></a></li>';
+            menu_main_li = menu_main_li + '<li class="menu-main__item"><a id="' + idTag + '" class="menu-main__link" href="' + button.path + '"><span class="menu-main__texto">' + button.title + '</span><span class="menu-main__icono"><i class="' + button.icon + '"></i></span></a></li>';
         } else {
             if (button.anchor != undefined && button.anchor.length > 0) {
                 selectClass = 'routerAnchor';
@@ -39,7 +39,7 @@ function crearMenuMain(menu) {
 
 
 
-            menu_main_li = menu_main_li + '<li class="menu-main__item"><a id="' + idTag + '" class="menu-main__link is-content ' + selectClass + '" data-route="' + button.slug + '" ' + dataAnchor + '><span class="menu-main__texto">' + button.title + '</span><span class="menu-main__icono"><i class="icon ' + button.icon + '"></i></span></a></li>';
+            menu_main_li = menu_main_li + '<li class="menu-main__item"><a id="' + idTag + '" class="menu-main__link is-content ' + selectClass + '" data-route="' + button.slug + '" ' + dataAnchor + '><span class="menu-main__texto">' + button.title + '</span><span class="menu-main__icono"><i class="' + button.icon + '"></i></span></a></li>';
         }
         if (button.submenu && button.submenu.length != 0) {
             menu_main_li = menu_main_li + '<ul class="menu-main submenu">';
@@ -61,9 +61,9 @@ function renderMenuSecondary(data) {
         let htmlExtra;
 
         if (button.slug == "external" || button.slug == "externo" || button.slug == "pdf") {
-            htmlExtra = '<li class="menu-secondary__item"><a class="menu-secondary__link " href="' + button.path + '" target="_blank"><i class="icon ' + button.icon + '"></i><span class="menu-secondary__texto">' + button.title + '</span></a></li>';
+            htmlExtra = '<li class="menu-secondary__item"><a class="menu-secondary__link " href="' + button.path + '" target="_blank"><i class="' + button.icon + '"></i><span class="menu-secondary__texto">' + button.title + '</span></a></li>';
         } else {
-            htmlExtra = '<li class="menu-secondary__item"><a class="menu-secondary__link" data-route="' + button.slug + '"><i class="icon ' + button.icon + '"></i><span class="menu-secondary__texto">' + button.title + '</span></a></li>';
+            htmlExtra = '<li class="menu-secondary__item"><a class="menu-secondary__link" data-route="' + button.slug + '"><i class="' + button.icon + '"></i><span class="menu-secondary__texto">' + button.title + '</span></a></li>';
         }
 
         menu_secondary.insertAdjacentHTML('beforeend', htmlExtra);
