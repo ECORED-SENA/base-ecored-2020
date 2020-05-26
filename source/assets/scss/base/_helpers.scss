@@ -1,10 +1,76 @@
+
+.bg-brand-color-dark {
+    background-color: $brand-color-dark !important;    
+}
+
+.bg-brand-color-light {
+    background-color: $brand-color-light !important;    
+}
+
+.bg-brand-color-secondary {
+    background-color: $brand-color-secondary !important;
+}
+
+.bg-danger {
+    background-color: #E64663 !important;    
+}
+
 .bg-base-light {
-    background-color: $base-color-light;
+    background-color: $base-color-light !important;
+}
+
+.bg-white {
+    background-color: white;
 }
 
 .text-small {
     font-size: .85em;
 }
+
+.text-color-orange {
+    color:  $dark-orange !important;
+}
+.bg-color-orange {
+    color:  $dark-orange !important;
+}
+
+.text-brand-color-dark {
+    color: $brand-color-dark;   
+}
+
+.text-brand-color-light {
+    color: $brand-color-light;   
+}
+
+
+.border-bottom-brand-color-dark {
+    border-bottom: 10px solid $brand-color-dark;    
+}
+
+.border-color-brand-color-dark {
+    border-color: $brand-color-dark;    
+}
+.border-color-primary {
+    border-color: $primary;    
+}
+.border-color-orange {
+    border-color: $dark-orange;
+}
+.border-color-brand-color-ligth {
+    border-color: $brand-color-light;    
+}
+
+
+.img-container {  
+  figure {     
+    width: 100%;     
+    img {              
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
 
 .icon {
     display: inline-block;

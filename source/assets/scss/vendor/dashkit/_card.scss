@@ -149,6 +149,14 @@
   margin-top: -($card-spacer-x + $avatar-size-xxl / 2);
 }
 
+.card-avatar-top.avatar-big {
+  margin-top: -($card-spacer-x + $avatar-size-big / 2);
+}
+
+.card-avatar-top.avatar-super {
+  margin-top: -($card-spacer-x + $avatar-size-super / 2);
+}
+
 
 // Card dropdown
 //

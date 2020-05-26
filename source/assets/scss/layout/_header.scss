@@ -1,0 +1,146 @@
+.page-header {
+    padding: 2rem 1rem 5rem;
+    background: $brand-color-dark;
+    position: relative;
+
+    .barra-dots {
+        width: 240px;
+        max-width: 100%;
+    }
+}
+
+#page-home .page-header {
+    &::before {
+        content: '';
+        border-style: solid;
+        border-width:50px 50px 0px 50px;
+        border-color: $brand-color-dark transparent transparent transparent;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -48px;
+        margin-top: -15px; 
+        z-index: 9;
+    }    
+}
+
+.page-header-textura{
+    .page-header {
+        background: url(../images/header/header_pattern.svg) scroll top left repeat $brand-color-dark !important;
+    }
+}
+
+
+.curso-subtitulo {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $primary;
+}
+
+.curso-titulo {
+    color: $primary;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.curso-descripcion {
+    color: $primary;
+    font-weight: normal;
+}
+
+.theme-dark {
+    .page-header {
+        background-color: $brand-color-dark;
+    }    
+    .curso-subtitulo,
+    .curso-titulo,
+    .curso-descripcion {
+        color: $white !important;
+    }
+}
+
+.theme-light {
+    .page-header {
+        background-color: $brand-color-light;
+    }    
+    .curso-subtitulo,
+    .curso-titulo,
+    .curso-descripcion {
+        color: $primary !important;
+    }
+}
+.header-ecored {
+
+    margin: 3rem 0;
+    position: relative;
+
+    h1 {
+        font-size: 1.1*$h1-font-size;
+
+        &::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: $h1-font-size;
+            width: 50px;
+            height: 4px;
+            margin: 1rem 0 2rem 0;
+            background-color: $base-color-highlight;
+        }
+    }
+
+    h2 {
+        font-size: 1.2*$h2-font-size;
+
+        &::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: $h2-font-size;
+            width: 50px;
+            height: 4px;
+            margin: 1rem 0 2rem 0;
+            background-color: lighten($base-color-highlight, 5%);
+        }        
+    }
+
+    h3 {
+        font-size: 1.2*$h3-font-size;
+
+        &::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: $h3-font-size;
+            width: 50px;
+            height: 4px;
+            margin: 1rem 0 2rem 0;
+            background-color: lighten($base-color-highlight, 10%);
+        }        
+    }
+
+    h4 {
+        font-size: 1.2*$h4-font-size;
+
+        &::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: $h4-font-size;
+            width: 50px;
+            height: 4px;
+            margin: 1rem 0 2rem 0;
+            background-color: lighten($base-color-highlight, 15%);
+        }        
+    }
+
+    h5 {
+        font-size: 1.2*$h5-font-size;
+    }
+
+
+}
+
+

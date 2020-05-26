@@ -1,9 +1,9 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap');
 
 @import "../../../node_modules/bootstrap/scss/functions";
 @import 'base/variables';
 @import './vendor/dashkit/variables';
+@import 'base/tema-curso';
 @import './vendor/bootstrap';
 @import './vendor/dashkit/dashkit';
 
@@ -11,14 +11,21 @@
 @import 'base/helpers';
 
 @import 'layout/divider';
+@import 'layout/header';
 @import 'layout/home-topbar';
-@import 'layout/home-header';
-
+@import 'layout/home-body';
 @import 'layout/page-main';
 @import 'layout/aside-contenidos';
-
 @import 'layout/footer';
 
-@import 'modulos/page-home';
+@import 'modulos/header-step';
+@import 'modulos/header-arrow';
+@import 'modulos/media-link';
+@import 'modulos/cards';
+@import 'modulos/card-media';
+@import 'modulos/nav-tabs';
 @import 'modulos/btn-menu-responsive';
+@import 'modulos/question';
 @import 'modulos/glossary';
+
+@import 'pages/custom';

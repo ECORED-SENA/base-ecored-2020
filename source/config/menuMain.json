@@ -14,19 +14,137 @@
     "path": "pages/1-tema.html",    
     "submenu": [
       {
-        "id": 1.1,
         "icon": "fa fa-file-text",
         "slug": "componentes-bs",
-        "title": "Alerts",
-        "anchor": "alerts"
+        "title": "Títulos",
+        "anchor": "titulos"
+      },   
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Típografía",
+        "anchor": "tipografia"
       },
       {
-        "id": 1.2,
         "icon": "fa fa-file-text",
         "slug": "componentes-bs",
-        "title": "Badges",
-        "anchor": "badges"
-      }
+        "title": "Cards",
+        "anchor": "card"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Card border",
+        "anchor": "cardborder"
+      },     
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Header Step",
+        "anchor": "headerstep"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Card + Imagen",
+        "anchor": "cardimagen"
+      },    
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Card + Video",
+        "anchor": "cardvideo"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Header Fluido",
+        "anchor": "headerfluid"
+      },      
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Header Arrow",
+        "anchor": "headerarrow"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Jumbotron",
+        "anchor": "jumbotron"
+      },    
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Card Avatar Top",
+        "anchor": "cardavatartop"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Card Avatar Left",
+        "anchor": "cardavatarleft"
+      },    
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Botón enlace a recursos externos",
+        "anchor": "medialink"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Question Header",
+        "anchor": "question"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Nav Tab",
+        "anchor": "tabsecored"
+      },   
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Galería",
+        "anchor": "gallery"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Navs Bootstrap",
+        "anchor": "bscomponentes"
+      },   
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Header + Nav",
+        "anchor": "buttonav"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Collapsable",
+        "anchor": "collapsable"
+      },     
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Slider",
+        "anchor": "slider"
+      },
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Tables",
+        "anchor": "tables"
+      },      
+      {
+        "icon": "fa fa-file-text",
+        "slug": "componentes-bs",
+        "title": "Lists",
+        "anchor": "lists"
+      }      
     ]   
   },
 
@@ -40,16 +158,6 @@
       "Tema 2"
     ],
     "path": "pages/2-tema.html"
-  },
-  {
-    "id": 3,
-    "icon": "fa fa-play-circle",
-    "slug": "tema-3",
-    "title": "3. Título Tema",
-    "breadcrumb": [
-      "Inicio",
-      "Tema 3"
-    ],
-    "path": "pages/3-tema.html"
   }
+
 ]
