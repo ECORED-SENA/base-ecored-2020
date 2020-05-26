@@ -144,7 +144,7 @@ async function renderGlossary(slug) {
         data.forEach(function (letter) {
             htmlGlossary += '<table class="glossary"><thead><tr><th scope="col">' + letter.letter + '</th></tr></thead><tbody>';
             letter.terms.forEach(function (term) { htmlGlossary += '<tr><td class="title">' + term.title + '</td><td>' + term.desciption + '</td></tr>'; });
-            htmlGlossary += '</tbody><table>';
+            htmlGlossary += '</tbody></table>';
         });
         htmlGlossary += '</div></div></div>';
 
