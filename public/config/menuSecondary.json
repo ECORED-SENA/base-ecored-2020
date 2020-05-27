@@ -1,0 +1,26 @@
+[
+    
+    {
+        "icon": "icon glosario",
+        "slug": "glosario",
+        "title": "Glosario",
+        "breadcrumb": ["Glosario"],
+        "path": "config/glosario.json"
+    },
+    {
+        "icon": "icon referencias",
+        "slug": "referencias",
+        "title": "Referencias bibliográficas",
+        "breadcrumb": ["Referencias bibliográficas"],
+        "path": "pages/referencias.html"
+    },
+    {
+        "icon": "fa fa-copyright",
+        "slug": "creditos",
+        "title": "Créditos",
+        "breadcrumb": [
+            "Créditos"
+        ],
+        "path": "pages/creditos.html"
+    }    
+]
