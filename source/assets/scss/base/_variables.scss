@@ -59,9 +59,9 @@ $dark-orange:#ff8f00;
 
 $primary: $black-dark;
 $secondary: $gray-700;
-$success: $green;
+$success: #00A99A;
 $info: $cyan;
-$warning: $yellow;
+$warning: $dark-orange;
 $danger: $red;
 $light: $gray-200;
 $dark: $black;
@@ -74,9 +74,9 @@ $base-color-highlight: $dark-orange;
 $base-color-gray: #CBD9E4;
 
 // Validation states Colors
-$color-success: lighten($green, 10%);
+$color-success: lighten(#00A99A, 10%);
 $color-info: lighten($info, 15%);
-$color-warning: lighten($yellow, 15%);
+$color-warning: lighten($dark-orange, 15%);
 $color-danger: desaturate($red, 15%);
 
 // Font Colors

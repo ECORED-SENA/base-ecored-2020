@@ -1,36 +1,55 @@
 mixin pageHeader(tituloTema, srcImagen)
-    .page-header.theme-light.mb-5
+    .page-header.mb-5
+        .page-textura
+            .container
 
-        .container
+                .row.align-items-center
 
-            .row.align-items-center
+                    .col-12.col-lg-6
 
-                .col-12.col-lg-6
+                        h3#curso-titulo-componente.curso-subtitulo Variables y estructuras de control en la programación orientada a objetos: Java
+                        h1#curso-titulo-tema.curso-titulo Sintaxis de las variables, tipos de datos y operaciones en Java
 
-                    h3#curso-titulo-componente.curso-subtitulo Nombre del componente formativo
-                    h1#curso-titulo-tema.curso-titulo= tituloTema
+                        .brand-line-primary
 
-                    .brand-line-primary
-
-                    .keywords
-                        span.badge.badge-pill.badge-light.mr-2 #keyword1
-                        span.badge.badge-pill.badge-light.mr-2 #keyword2
-                        span.badge.badge-pill.badge-light.mr-2 #keyword3
-
-                    .barra-dots.mt-5
-                        img.img-fluid(src='../assets/images/header/icon_dots.svg', alt='alt')
+                        .keywords
+                            span.badge.badge-pill.badge-light.mr-2 #Variables
+                            span.badge.badge-pill.badge-light.mr-2 #TiposDeDatos
+                            span.badge.badge-pill.badge-light.mr-2 #Operaciones
 
 
-                .col-12.col-lg-6
-                    .d-none.d-lg-block
-                        img(src= srcImagen)
+                        .barra-dots.mt-5
+                            img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
+
+
+                    .col-12.col-lg-6
+                        .d-none.d-lg-block
+                            img(src= srcImagen).curso-imagen
+
 
 mixin navTemaItem(numero, titulo, ruta)
     li.list-group-item.nav-tema-item
         .row.align-items-center
-            .col-auto
-                .avatar.avatar-sm
-                    span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold= numero
+            if numero == 'play'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-play
+            else if numero == 'question'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-question
+            else if numero == 'text'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-file-text-o
+            else
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold= numero
+
             .col.ml-n2
                 span.nav-tema-item__titulo 
                     a(href= ruta)= titulo
@@ -40,7 +59,7 @@ mixin navTemaItem(numero, titulo, ruta)
     
     
 mixin creditosFooter(ruta)
-    footer#creditos.footer
+    footer#Creditos.footer
         .container
 
             h1 Créditos               
@@ -50,49 +69,90 @@ mixin creditosFooter(ruta)
                 .col-12.col-md-5
                     h3.footer-subtitulo Contenido Instruccional
 
-                    p.footer-texto
-                        | #[strong Nombre completo ]<br/>   
-                        | #[strong Nombre completo ]<br/>                  
-                        span.text-small Instructores<br/>
+                    p.footer-texto.mb-2
+                        | #[strong Gloria Matilde Lee Mejía	 ]<br/>   
+                        span.text-small Responsable del equipo
 
                     p.footer-texto
-                        | #[strong Nombre completo ]<br/>   
-                        | #[strong Nombre completo ]<br/>                  
-                        span.text-small Diseño instruccional<br/>
-
-
-                    p.footer-texto
-                        | #[strong Gloria Lee ]<br/>   
-                        span.text-small Responsable del equipo<br/>
-
-                    p.footer-texto
-                        span.text-small.text-uppercase Nombre del Centro 
+                        span.text-small.text-uppercase Centro de Comercio y Servicios
                         br
-                        span.text-small Ubicación
+                        span.text-small Regional Tolima
 
-                        
-                .col-12.col-md-5
-                    h3.footer-subtitulo Diseño y desarrollo de recursos educativos digitales
 
-                    p.footer-texto
-                        | #[strong Lady Adriana Ariza Luque ]<br/>   
-                        | #[strong Daniel Ricardo Mutis Gomez ]<br/>                  
-                        | #[strong Eulises Orduz Amezquita ]<br/>                       
-                        | #[strong Nelson Iván Vera Briceño]<br/>
-                        | #[strong José Jaime Luis Tang Pinzón]<br/>
-                        | #[strong Carlos Julian Ramirez Benitez]<br/>
-                        | #[strong Leyson Fabian Castaño Perez]<br/>
-                        | #[strong Luis Gabriel Urueta Alvarez]<br/> 
-                        span.text-small Diseño Web & Producción Audiovisual<br/>
-
-                    p.footer-texto
-                        | #[strong Francisco J. Lizcano Reyes ]<br/>   
-                        span.text-small Responsable del equipo<br/>
+                    p.footer-texto.mb-2
+                        | #[strong Rafael Nelftalí Lizcano Reyes]<br/>               
+                        span.text-small Asesor pedagógico<br/>
 
                     p.footer-texto
                         span.text-small.text-uppercase CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA   
                         br
-                        span.text-small Floridablanca, Santander                   
+                        span.text-small Regional Santander    
+
+                    p.footer-texto.mb-2
+                        | #[strong Lucero Montes Arenas]<br/>   
+                        span.text-small Gestora de desarrollo de programas	<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro para la Formación Cafetera
+                        br
+                        span.text-small Regional Caldas
+
+                    p.footer-texto.mb-2
+                        | #[strong Julio Alexander Rodríguez del Castillo]<br/>   
+                        span.text-small E-Pedagogo instruccional	<br/>
+                    p.footer-texto.mb-2
+                        | #[strong Rachman Bustillo Martínez]<br/>   
+                        span.text-small Evaluador de contenido<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de Atención Sector Agropecuario
+                        br
+                        span.text-small Regional Risaralda
+
+                    p.footer-texto.mb-2
+                        | #[strong Natalia Andrea Bueno Pizarro]<br/>   
+                        span.text-small Diseñador instruccional	<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro para la Industria de la Comunicación Gráfica
+                        br
+                        span.text-small Regional Distrito Capital
+
+
+                       
+                .col-12.col-md-5
+                    h3.footer-subtitulo Diseño y desarrollo de recursos educativos digitales
+                    
+                    p.footer-texto
+                        | #[strong Francisco José Lizcano Reyes ]<br/>   
+                        span.text-small Responsable del equipo<br/>
+
+                    p.footer-texto                           
+                        | #[strong Daniel Ricardo Mutis Gómez]<br/>  
+                        | #[strong Luis Gabriel Urueta Álvarez]<br/>
+                        | #[strong Yazmin Rocio Figueroa Pacheco]<br/>
+                        span.text-small Diseño Web & Producción Audiovisual<br/>
+
+                    p.footer-texto
+                        | #[strong Edgar Mauricio Cortes García]<br/>
+                        | #[strong Leyson Fabian Castaño Pérez]<br/>                                         
+                        span.text-small Desarrollo Front-End<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA   
+                        br
+                        span.text-small Regional Santander                   
+
+                    h3.footer-subtitulo.mt-5 Gestores de repositorio
+                    
+                    p.footer-texto
+                        | #[strong Kely Alejandra Quiros Duarte ]<br/>   
+                        span.text-small Administrador repositorio de contenidos y gestores de repositorio.<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de comercio y servicios  
+                        br
+                        span.text-small Regional Tolima
 
                 .col-12.col-md-2  
                     .d-flex.flex-column.justify-content-center

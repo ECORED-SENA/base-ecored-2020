@@ -3,8 +3,16 @@
     background-color: $brand-color-dark !important;    
 }
 
+.bg-brand-color-dark-light {
+    background-color: lighten($brand-color-dark, 10%) !important;    
+}
+
 .bg-brand-color-light {
     background-color: $brand-color-light !important;    
+}
+
+.bg-brand-color-light-more {
+    background-color: lighten($brand-color-light,10%) !important;    
 }
 
 .bg-brand-color-secondary {
@@ -19,12 +27,24 @@
     background-color: $base-color-light !important;
 }
 
+.bg-orange {
+    background-color: $dark-orange !important;
+}
+
+.bg-primary {
+    background-color: $primary;
+}
+
 .bg-white {
     background-color: white;
 }
 
 .text-small {
     font-size: .85em;
+}
+
+.text-color-primary {
+    color: $primary;
 }
 
 .text-color-orange {
@@ -35,16 +55,32 @@
 }
 
 .text-brand-color-dark {
-    color: $brand-color-dark;   
+    color: $brand-color-dark !important;   
 }
 
 .text-brand-color-light {
-    color: $brand-color-light;   
+    color: $brand-color-light !important;   
+}
+
+.base-light-font-weight {
+    font-weight: $base-light-font-weight;
+}
+
+.base-medium-font-weight {
+    font-weight: $base-medium-font-weight;
+}
+
+.base-bold-font-weight {
+    font-weight: $base-bold-font-weight;
 }
 
 
 .border-bottom-brand-color-dark {
     border-bottom: 10px solid $brand-color-dark;    
+}
+
+.letter-spacing-1x {
+    letter-spacing: 0.3px;
 }
 
 .border-color-brand-color-dark {

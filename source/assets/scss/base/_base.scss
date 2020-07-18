@@ -70,12 +70,12 @@ figure {
     tr {
         th {
             &:nth-child(2) {
-                text-align: center;
+                //text-align: center;
             }
         }
         td {
             &:nth-child(2) {
-                text-align: center;
+                //text-align: center;
             }
             i {
                 font-size: 30px;
@@ -108,3 +108,13 @@ a:not([href]) {
     text-decoration: $link-hover-decoration;
   }
 }
+
+ul.bg-color-dark > li {
+  margin-bottom: .8rem;
+}
+ul.bg-color-dark > li { color: $brand-color-dark; } 
+ul.bg-color-dark > li > span,
+ul.bg-color-dark > li > p { 
+  color:$primary;
+  margin-left: 7px; 
+} 

@@ -1,0 +1,52 @@
+include ../mixins/functions
++pageHeader("Introducción", "assets/images/header/header_media.svg")
+
+.container#page-introduccion
+
+    .header-ecored
+        h2 1.2 Tipos
+
+
+    .jumbotron.bg-white.mb-0
+
+        p Teniendo en cuenta el lugar donde están definidas, la forma de declaración y su accesibilidad, las variables se dividen en tres tipos:
+
+        p.mb-4 Algunos ejemplos de declaración de variables son los siguientes:
+
+        .subtitulo-guion
+            h3 Locales   
+
+        p.mt-4 Suelen ser declaradas dentro de un método; se crean cuando este es llamado, y se destruyen al salir del mismo. Únicamente es posible acceder dentro del mismo método.
+
+        p.mt-5 A continuación, se observa un ejemplo donde se define y utiliza una variable local dentro del método:
+
+        p.text-center.my-5
+            img(src="assets/images/pages/tema-1/t12-1.svg").img-fluid
+
+        p La variable local es creada y utilizada dentro del método, por lo tanto, la ejecución no presenta ningún inconveniente; sin embargo, si dicha variable intenta utilizarse por fuera del método, como se observa en el siguiente ejemplo, el programa devolvería un error.
+
+        p.text-center.my-5
+            img(src="assets/images/pages/tema-1/t12-2.svg").img-fluid
+
+        .subtitulo-guion
+            h3 Estáticas   
+
+        p.mt-4 También llamadas variables de clase, son declaradas dentro de una clase, pero por fuera de cualquier método; se crean al iniciar la ejecución del programa, y se destruyen cuando esta finaliza. Pueden ser accedidas con el nombre de la clase, sin ser necesario ningún objeto; solamente puede haber una variable estática por cada clase.  
+
+        .bg-brand-color-light.border-bottom-orange.my-5
+            p.p-4 Se utilizan especialmente cuando se desea que los objetos tengan referencia a algún valor que sea igual en todas las instancias de la clase, y teniendo en cuenta que dicho valor pueda ser cambiado; esto facilita la modificación de información con una sola acción, dado que basta con editar el valor en la clase principal, y todas sus instancias podrán reconocerlo.
+
+        p.text-center.my-5
+            img(src="assets/images/pages/tema-1/t12-3.svg").img-fluid
+
+        p En el ejemplo anterior, en la clase Empleado se declara el salario como una variable estática, y posteriormente en el main se utiliza dicha variable, únicamente haciendo uso del nombre de la clase, sin que haya la necesidad de un objeto.
+
+        .subtitulo-guion
+            h3 No estáticas   
+
+        p.mt-4 También conocidas como variables de instancia. Son declaradas dentro de una clase, pero por fuera de cualquier método; se crean al instanciar un objeto de la clase, y se destruyen al destruirse dicho objeto; cada objeto puede tener una copia de la variable no estática.
+
+        p.text-center.my-5
+            img(src="assets/images/pages/tema-1/t12-4.svg").img-fluid
+
+        P En el ejemplo anterior, en la clase Empleados, se declaran la edad, el área y el sueldo como variables de instancia (no estáticas) y posteriormente en el main se imprimen los valores de dichas variables, haciendo evidente que para cada objeto se muestra un valor diferente de cada una de ellas.

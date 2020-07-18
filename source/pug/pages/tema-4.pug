@@ -1,0 +1,73 @@
+include ../mixins/functions
++pageHeader("Introducción", "assets/images/header/header_media.svg")
+
+.container#page-introduccion
+
+    .header-ecored
+        h1 4. Funciones
+
+    .jumbotron.bg-white.mb-0
+
+        .row.align-items-center
+            .col-auto
+                img(src="assets/images/pages/tema-4/t4-icono.svg").img-fluid
+            .col
+                p Las funciones en Java también son conocidas como métodos y deben definirse dentro de las clases. Consisten en una serie de líneas de código que utilizan parámetros para realizar acciones.
+
+                p 
+                    strong Pese a lo anterior, los conceptos de método y función tienen como diferencia que un método no devuelve nada, en cambio una función sí lo hace.
+
+                p Crear funciones es de gran importancia en el desarrollo de soluciones, ya que permiten separar el código de acuerdo con los requerimientos, implementando cada utilidad del programa en un método independiente.
+                
+                
+        p.my-5 La sintaxis para declarar una función es la siguiente:
+            
+        p.text-center.my-5
+            img(src="assets/images/pages/tema-4/terminal-1.png").img-fluid
+
+        ul.bg-color-dark.my-5
+            li 
+                span #[strong acceso:] corresponde al modificador de acceso y permite controlar el acceso a los datos que componen un objeto; puede ser public, protected, private o default.
+            li 
+                span #[strong modificador:] es opcional y puede tomar los valores final o static.
+            li 
+                span #[strong tipo:] corresponde al tipo de dato del valor que la función va a retornar; puede ser int, float, booleano o cualquiera de los utilizados según se requiera.
+            li 
+                span #[strong nombre:] nombre que identifica la función para invocarla.
+            li 
+                span #[strong tipoParametro:] el tipo de dato que recibe la función como parámetro.
+            li 
+                span #[strong nombreParametro:] el nombre del parámetro recibido.
+            li 
+                span #[strong instruccion1… instruccionN:] sentencias ejecutadas al invocar la función.
+            li 
+                span #[strong return resultado:] valor devuelto por la función.
+
+        p.my-5 Parar comprender mejor esta temática, se observa en la siguiente imagen una aplicación creada por NetBeans, que por medio de funciones recibe dos números enteros y realiza con estos las cuatro operaciones matemáticas básicas.
+
+        p.text-center.my-5
+            img(src="assets/images/pages/tema-4/nb-1.png").img-fluid
+
+        p.mt-5 A partir de la línea 21 se declararon las cuatro funciones encargadas de sumar, restar, multiplicar y dividir los dos parámetros que les sean enviados.
+
+        p Dentro del main, en la línea 6 se declaran las variables que son enviadas como parámetro a cada función, y a partir de la línea 8, también dentro del main, se invocan las funciones y se imprimen los resultados devueltos.
+
+        p A simple vista pareciera que haber escrito todo el código dentro del main fuese más sencillo; sin embargo si se piensa en el alcance de los programas, la escritura de las rutinas de programación sin utilizar funciones, se torna desordenada y poco funcional, ya que en soluciones de alta envergadura se requiere efectuar acciones repetitivas que son facilitadas con el uso de funciones; pudiendo de esta manera invocarlas en distintas partes, sin que sea necesario repetir la escritura del código completo.
+                
+    .bg-brand-color-light.mt-0
+
+        .row.align-items-center.p-4
+            .col-auto
+                img(src="assets/images/pages/tema-3/t32-icono.svg").img-fluid
+            .col
+                p #[strong El lenguaje JAVA] cuenta con una serie de métodos que ya han sido declarados con anterioridad y por lo tanto para utilizarlos basta con invocarlos con sus respectivos argumentos; varios de esos métodos corresponden a la <b>clase math</b>. 
+
+                p Adicionalmente, en la clase math también se encuentra una constante de uso común que es el valor de PI (conocido usualmente como 3,1416), el cual se puede utilizar así: <b>Math.PI</b>. 
+
+
+    .jumbotron.bg-white.my-0
+
+        p En la siguiente imagen se observa un ejemplo que utiliza algunos de los métodos de la clase <i>math</i>. 
+
+        p.text-center.my-5
+            img(src="assets/images/pages/tema-4/nb-2.png").img-fluid        

@@ -1,0 +1,50 @@
+<div class="page-header mb-5">
+    <div class="page-textura">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <h3 class="curso-subtitulo" id="curso-titulo-componente">Variables y estructuras de control en la programación orientada a objetos: Java</h3>
+                    <h1 class="curso-titulo" id="curso-titulo-tema">Sintaxis de las variables, tipos de datos y operaciones en Java</h1>
+                    <div class="brand-line-primary"></div>
+                    <div class="keywords"><span class="badge badge-pill badge-light mr-2">#Variables</span><span class="badge badge-pill badge-light mr-2">#TiposDeDatos</span><span class="badge badge-pill badge-light mr-2">#Operaciones</span></div>
+                    <div class="barra-dots mt-5"><img class="img-fluid" src="assets/images/header/icon_dots.svg" alt="alt" /></div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="d-none d-lg-block"><img class="curso-imagen" src="assets/images/header/header_media.svg" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" id="page-introduccion">
+    <div class="header-ecored">
+        <h2>1.2 Tipos</h2>
+    </div>
+    <div class="jumbotron bg-white mb-0">
+        <p>Teniendo en cuenta el lugar donde están definidas, la forma de declaración y su accesibilidad, las variables se dividen en tres tipos:</p>
+        <p class="mb-4">Algunos ejemplos de declaración de variables son los siguientes:</p>
+        <div class="subtitulo-guion">
+            <h3>Locales </h3>
+        </div>
+        <p class="mt-4">Suelen ser declaradas dentro de un método; se crean cuando este es llamado, y se destruyen al salir del mismo. Únicamente es posible acceder dentro del mismo método.</p>
+        <p class="mt-5">A continuación, se observa un ejemplo donde se define y utiliza una variable local dentro del método:</p>
+        <p class="text-center my-5"><img class="img-fluid" src="assets/images/pages/tema-1/t12-1.svg" /></p>
+        <p>La variable local es creada y utilizada dentro del método, por lo tanto, la ejecución no presenta ningún inconveniente; sin embargo, si dicha variable intenta utilizarse por fuera del método, como se observa en el siguiente ejemplo, el programa devolvería un error.</p>
+        <p class="text-center my-5"><img class="img-fluid" src="assets/images/pages/tema-1/t12-2.svg" /></p>
+        <div class="subtitulo-guion">
+            <h3>Estáticas </h3>
+        </div>
+        <p class="mt-4">También llamadas variables de clase, son declaradas dentro de una clase, pero por fuera de cualquier método; se crean al iniciar la ejecución del programa, y se destruyen cuando esta finaliza. Pueden ser accedidas con el nombre de la clase, sin ser necesario ningún objeto; solamente puede haber una variable estática por cada clase. </p>
+        <div class="bg-brand-color-light border-bottom-orange my-5">
+            <p class="p-4">Se utilizan especialmente cuando se desea que los objetos tengan referencia a algún valor que sea igual en todas las instancias de la clase, y teniendo en cuenta que dicho valor pueda ser cambiado; esto facilita la modificación de información con una sola acción, dado que basta con editar el valor en la clase principal, y todas sus instancias podrán reconocerlo.</p>
+        </div>
+        <p class="text-center my-5"><img class="img-fluid" src="assets/images/pages/tema-1/t12-3.svg" /></p>
+        <p>En el ejemplo anterior, en la clase Empleado se declara el salario como una variable estática, y posteriormente en el main se utiliza dicha variable, únicamente haciendo uso del nombre de la clase, sin que haya la necesidad de un objeto.</p>
+        <div class="subtitulo-guion">
+            <h3>No estáticas </h3>
+        </div>
+        <p class="mt-4">También conocidas como variables de instancia. Son declaradas dentro de una clase, pero por fuera de cualquier método; se crean al instanciar un objeto de la clase, y se destruyen al destruirse dicho objeto; cada objeto puede tener una copia de la variable no estática.</p>
+        <p class="text-center my-5"><img class="img-fluid" src="assets/images/pages/tema-1/t12-4.svg" /></p>
+        <P>En el ejemplo anterior, en la clase Empleados, se declaran la edad, el área y el sueldo como variables de instancia (no estáticas) y posteriormente en el main se imprimen los valores de dichas variables, haciendo evidente que para cada objeto se muestra un valor diferente de cada una de ellas.</P>
+    </div>
+</div>

@@ -70,13 +70,15 @@ function renderMenuSecondary(data) {
 
         document.getElementsByClassName('menu-secondary__link')[i].addEventListener('click', function () {
 
-            $.routes.find('path').routeTo({ slug: this.getAttribute("data-route") });
-            $('.menu-main__link--active').removeClass('menu-main__link--active');
-            $('.menu-secondary__link--active').removeClass('menu-secondary__link--active');
-            $(this).addClass('menu-secondary__link--active');
+            if (button.slug != "external" && button.slug != "externo" && button.slug != "pdf") {
+                $.routes.find('path').routeTo({ slug: this.getAttribute("data-route") });
+                $('.menu-main__link--active').removeClass('menu-main__link--active');
+                $('.menu-secondary__link--active').removeClass('menu-secondary__link--active');
+                $(this).addClass('menu-secondary__link--active');
 
-            $('#page-main-header').show();
-            document.getElementById('curso-titulo-tema').textContent = $(this).find('.menu-secondary__texto').html();
+                $('#page-main-header').show();
+                document.getElementById('curso-titulo-tema').textContent = $(this).find('.menu-secondary__texto').html();
+            }
 
         });
     });
@@ -155,7 +157,11 @@ async function renderGlossary(slug) {
 }
 
 function renderContent(slug, anchor) {
-
+    
+    var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+    if (viewportWidth < 575) {
+        $('.page-main-aside__close').trigger('click');
+    }
     let item = sessionStorage.getItem(slug);
 
     if (item) {
@@ -184,11 +190,13 @@ function renderContent(slug, anchor) {
         console.log("Slug no encontrado, revisar carpeta de contenido o json de configuración.");
     }
 
+
+
 }
 
- function refreshControlPage(actualHash) {
+function refreshControlPage(actualHash) {
     
-     let navItems = Array.from(document.getElementsByClassName('no-anchor'));
+    let navItems = Array.from(document.getElementsByClassName('no-anchor'));
     
     let navItemIndex = navItems.findIndex((element) => element.getAttribute("data-route") == actualHash);
     (navItemIndex == 0) ? document.getElementById('back').removeAttribute('href'): document.getElementById('back').setAttribute('href', navItems[navItemIndex - 1].getAttribute('data-route'));

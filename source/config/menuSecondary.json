@@ -1,12 +1,23 @@
 [
-    
+    {
+        "icon": "fa fa-download",
+        "slug": "pdf",
+        "title": "Descargar PDF",
+        "path": "media/documentos/MF2_Sintaxis_de_las_variables_tipos_de_datos_y_operaciones_en_Java.pdf"
+    },
     {
         "icon": "icon glosario",
         "slug": "glosario",
         "title": "Glosario",
         "breadcrumb": ["Glosario"],
         "path": "config/glosario.json"
-    },
+    },   
+    {
+        "icon": "fa fa-folder-open-o",
+        "slug": "material-complementario",
+        "title": "Material complementario",
+        "path": "pages/material-complementario.html"
+    },    
     {
         "icon": "icon referencias",
         "slug": "referencias",

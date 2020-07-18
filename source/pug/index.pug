@@ -6,15 +6,15 @@ html(lang="es")
         include includes/head.pug
 
 
-    body#page-home.theme-ligth.page-header-textura
+    body#page-home.theme-dark.page-header-textura
 
         header#CursoPresentacion.curso-presentacion.page-header
+            .page-textura
+                .container
 
-            .container
+                    include includes/page-home_topbar.pug
 
-                include includes/page-home_topbar.pug
-
-                include includes/page-home_header.pug                
+                    include includes/page-home_header.pug                
 
         section#ResultadosAprendizaje.curso-resultados.section.bg-base-light
 

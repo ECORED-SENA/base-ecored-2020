@@ -1,0 +1,191 @@
+include ../mixins/functions
++pageHeader("Introducción", "assets/images/header/header_media.svg")
+
+.container#page-introduccion
+
+    .header-ecored
+        h2 3.2 Jerarquía
+
+    .jumbotron.bg-white.mb-0
+
+        p En Java se debe tener en cuenta la jerarquía o el orden en que son evaluadas las expresiones matemáticas, según los operadores que estas utilicen; es importante también el empleo del paréntesis para agrupar subexpresiones con el fin de indicar que sean evaluadas primero.
+
+        p Al igual que en las expresiones algebraicas, los paréntesis son utilizados con el fin de agrupar términos. Por ejemplo, si se desea multiplicar <strong>x</strong> por el resultado de sumar <strong>y + z</strong> debe escribirse así:
+
+        p.text-center.my-5
+            img(src="assets/images/pages/tema-3/t32-1.png").img-fluid
+
+        p Se sumaría entonces <strong>x + y</strong> para posteriormente multiplicar el resultado por <strong>z</strong>.
+
+        p.mt-5 Con respecto a la jerarquía que debe analizarse en los operadores, se tienen dos reglas básicas que son las siguientes:
+
+        ul.bg-color-dark
+            li 
+                span Deben realizarse primero las operaciones de multiplicación, división y residuo; en caso de que la expresión contenga varias, se efectúan de izquierda a derecha.
+            li 
+                span Posteriormente se efectúan las operaciones de suma y resta, y de igual manera, si son varias, se aplican de izquierda a derecha.
+
+        p.my-5 En la siguiente tabla se puede observar un resumen de lo anterior y se incluyen los operadores combinados y el de asignación que deben ser evaluados en el último orden.
+
+        p.text-center.my-5
+            img(src="assets/images/pages/tema-3/t32-2.png").img-fluid
+
+        p Para comprender y aplicar la jerarquía de las operaciones, se observan a continuación una serie de ejemplos con expresiones escritas teniendo en cuenta la sintaxis del lenguaje Java.
+    
+
+    .bg-brand-color-light.mt-0
+
+        .row.align-items-center.p-4
+            .col-auto
+                img(src="assets/images/pages/tema-3/t32-icono.svg").img-fluid
+            .col
+                h4 Ejemplo 1. Promedio entre 4 términos
+                p.pl-0 Promedio = ( termino1 + termino2 + termino3 + termino4 ) / 4;  
+
+    .jumbotron.bg-white.my-0
+
+        p En la expresión previa es obligatorio utilizar los paréntesis ya que, en caso de omitirlos, el resultado devuelto sería totalmente diferente debido a la jerarquía, y por ende la primera operación a efectuar es la división.
+
+        p.mb-5 En el siguiente video se observa el ejemplo anterior realizado con y sin paréntesis en NetBeans.
+
+        .card.my-4
+            .embed-responsive.embed-responsive-16by9
+                iframe.embed-responsive-item(width='560', height='315', src='https://www.youtube.com/embed/39VJptW7jQo', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+            .card-body.bg-brand-color-secondary.text-white
+                p <b>Jerarquía</b>    
+
+    .bg-brand-color-light.mt-0
+
+        .row.align-items-center.p-4
+            .col-auto
+                img(src="assets/images/pages/tema-3/t32-icono.svg").img-fluid
+            .col
+                h4 Ejemplo 2. Hallar el valor de “y” en el polinomio de segundo grado
+                p.pl-0 y = ax² + bx + c; <br> donde a = 5, b = 7, c = 2, x = 3<br>y = a * x * x + b * x + c;
+
+    .jumbotron.bg-white.my-0
+        
+        p En la expresión previa no es necesario utilizar paréntesis, únicamente se debe aplicar la jerarquía de las operaciones, efectuando de izquierda a derecha primero las multiplicaciones y luego las sumas.  
+
+        p En la siguiente figura se observa el ejemplo anterior realizado en NetBeans.
+
+        p.text-center.my-5
+            img(src="assets/images/pages/tema-3/t32-3.png").img-fluid
+
+        p.my-5 En las líneas 5 y 6 del ejemplo anterior se declaran las variables requeridas para calcular el valor de y. Posteriormente se realiza lo siguiente:
+
+        ul.bg-color-dark
+            li 
+                span En la línea 8 se escribe la expresión que es evaluada de izquierda a derecha; respetando la jerarquía, se realiza inicialmente la multiplicación que aparece de primera a la izquierda a * x que al reemplazar es 5 * 3 = 15, luego se tendría 15 * x + b * x + c y se continúa entonces de nuevo con la primera multiplicación de la izquierda 15 * x  que reemplazado es 15 * 3 = 45. A continuación se tiene 45 + b * x + c y el siguiente paso es la multiplicación 45 + b * 3 + c, reemplazando 45 + 7 * 3 + c que quedaría 45 + 21 + c, luego se efectúan las sumas, iniciando también con la primera de la izquierda 45 + 21 = 66 quedando finalmente con 66 + c que si se reemplaza es 66 + 2 = 68, lo cual corresponde con el valor devuelto por la línea 9.
+            li 
+                span En caso de que la jerarquía no fuera respetada y las operaciones se efectuarán tal como aparecen, de izquierda a derecha, sin tener en cuenta la precedencia de los operadores, el proceso sería: 5 * 3 = 15 * 3 = 45 + 7 = 52 * 3 = 156 + 2 = 158; para Java esto no es correcto, ya que el lenguaje respeta dicha jerarquía.
+
+
+    .bg-brand-color-light.mt-0
+
+        .row.align-items-center.p-4
+            .col-auto
+                img(src="assets/images/pages/tema-3/t32-icono.svg").img-fluid
+            .col
+                h4 Ejemplo 3. Hallar el valor de “b” de acuerdo con la fórmula
+                p.pl-0 b=2/((x+y)/(z/a))+(g/h)/e+3cdf <br>donde x=5, y=6, z=3, a=4, c=1, d=7, e=6, f=3, g=2 ,h=3<br>La expresión escrita en forma horizontal para que sea entendible por Java sería: <br>b = 2 / ( ( x + y ) / ( z / a ) ) + g / h / e + 3 * c * d * f
+
+    .jumbotron.bg-white.my-0
+        
+        p En la expresión previa no es necesario utilizar paréntesis, únicamente se debe aplicar la jerarquía de las operaciones, efectuando de izquierda a derecha primero las multiplicaciones y luego las sumas.                  
+
+        p En la expresión previa es preciso emplear los paréntesis con el fin de que sea más clara; para resolverla, además de la jerarquía de las operaciones, se debe tener en cuenta que se comienza evaluando los paréntesis más internos. 
+
+        p En la siguiente figura se observa el ejemplo anterior realizado en NetBeans.
+
+        p.text-center.my-5
+            img(src="assets/images/pages/tema-3/t32-4-1.png").img-fluid
+
+        p En la línea 5 del ejemplo anterior se declaran las variables requeridas para hallar el valor de b de acuerdo con la fórmula, y posteriormente se realiza lo siguiente:
+
+        ul.bg-color-dark
+            li
+                span En la línea 7 se escribe la expresión y en la línea 8 se imprime el resultado devuelto.
+            li
+                span El proceso de evaluación de dicha expresión se realiza en el orden visto en la siguiente tabla.
+
+        table.table.table-bordered.my-5
+            thead.thead-dark
+                tr
+                    th Paso
+                    th Acción
+                    th Valores
+                    th Resultado
+
+            tbody
+                tr
+                    td 1
+                    td Sumar "x" más "y"
+                    td 5 + 6
+                    td 11
+
+                tr
+                    td 2
+                    td Dividir "z" entre "a"
+                    td 3 / 4
+                    td 0,75
+
+                tr
+                    td 3
+                    td Dividir el resultado del paso 1 entre el resultado del paso 2
+                    td 11 / 0,75	
+                    td 14,66666667
+
+                tr
+                    td 4
+                    td Dividir 2 entre el resultado del paso 3
+                    td 2 / 14,66666667
+                    td 0,136363636                                       
+
+                tr
+                    td 5
+                    td Dividir "g" entre "h"
+                    td 2 / 3
+                    td 0,666666667
+
+                tr
+                    td 6
+                    td Dividir el resultado del paso 5 entre "e"
+                    td 0,666666667 / 6
+                    td 0,1111111
+
+                tr
+                    td 7
+                    td Multiplicar 3 por "c"
+                    td 3 * 1	
+                    td 3
+
+                tr
+                    td 8
+                    td Multiplicar el resultado del paso 7 por "d"
+                    td 3 * 7
+                    td 21
+
+                tr
+                    td 9
+                    td Multiplicar el resultado del paso 8 por "f"
+                    td 21 * 3
+                    td 63
+
+                tr
+                    td 10
+                    td Sumar el resultado del paso 4 más el resultado del paso 6
+                    td 0,136363636 + 0,111111111
+                    td 0,247474747
+
+                tr
+                    td 11
+                    td Sumar el resultado del paso 10 más el resultado del paso 9
+                    td 0,247474747 + 63	
+                    td 63,24747475
+
+                tr
+                    td 12
+                    td Asignar a "b" el resultado del paso 11
+                    td b = 63,24747475
+                    td ---

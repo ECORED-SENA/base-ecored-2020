@@ -3,7 +3,7 @@
     "icon": "fa fa-home",
     "slug": "external",
     "title": "Volver al Inicio",
-    "path": "../"
+    "path": "index.html"
   },  
   { 
     "id": 1,
@@ -158,6 +158,11 @@
       "Tema 2"
     ],
     "path": "pages/2-tema.html"
-  }
-
+  },
+  {
+    "icon": "fa fa-question-circle",
+    "slug": "actividad-1",
+    "title": "Actividad didáctica",
+    "path": "pages/actividad-1.html"
+  } 
 ]
