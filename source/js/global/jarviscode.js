@@ -22,7 +22,7 @@ function crearMenuMain(menu) {
         let idTag = '';
         let dataAnchor = '';
         var selectClass = 'no-anchor';
- 
+
         if (button.id != undefined && button.id > 0) {
             idTag = button.id
         }
@@ -114,7 +114,7 @@ function renderMenuMain(data) {
     let verticalNavbarAnchor = document.getElementsByClassName("routerAnchor");
     Array.from(verticalNavbarAnchor).forEach(function (button) {
         button.addEventListener("click", function (e) {
-  
+
             let route = button.getAttribute("data-route");
             let anchor = button.getAttribute("data-anchor");
             $.routes.find("anchor").routeTo({ slug: route, anchor: anchor });
@@ -126,7 +126,7 @@ function renderMenuMain(data) {
             $(this).addClass('menu-main__link--active');
 
         });
-    });    
+    });
 }
 
 async function renderGlossary(slug) {
@@ -157,7 +157,7 @@ async function renderGlossary(slug) {
 }
 
 function renderContent(slug, anchor) {
-    
+
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     if (viewportWidth < 575) {
         $('.page-main-aside__close').trigger('click');
@@ -195,12 +195,12 @@ function renderContent(slug, anchor) {
 }
 
 function refreshControlPage(actualHash) {
-    
+
     let navItems = Array.from(document.getElementsByClassName('no-anchor'));
-    
+
     let navItemIndex = navItems.findIndex((element) => element.getAttribute("data-route") == actualHash);
-    (navItemIndex == 0) ? document.getElementById('back').removeAttribute('href'): document.getElementById('back').setAttribute('href', navItems[navItemIndex - 1].getAttribute('data-route'));
-    (navItemIndex == (navItems.length - 1)) ? document.getElementById('next').removeAttribute('href'): document.getElementById('next').setAttribute('href', navItems[navItemIndex + 1].getAttribute('data-route'));
+    (navItemIndex == 0) ? document.getElementById('back').removeAttribute('href') : document.getElementById('back').setAttribute('href', navItems[navItemIndex - 1].getAttribute('data-route'));
+    (navItemIndex == (navItems.length - 1)) ? document.getElementById('next').removeAttribute('href') : document.getElementById('next').setAttribute('href', navItems[navItemIndex + 1].getAttribute('data-route'));
 }
 
 async function initContent() {
@@ -255,13 +255,13 @@ document.addEventListener("DOMContentLoaded", async function () {
             e.preventDefault();
             var hashPageControl = $(this).attr("href");
 
-            $('.no-anchor').each(function(index, element) {
-                if ($(element).data('route') == hashPageControl ) {
+            $('.no-anchor').each(function (index, element) {
+                if ($(element).data('route') == hashPageControl) {
 
                     $.routes.find('path').routeTo({ slug: hashPageControl });
 
                     $('#page-main-header').hide();
-                    
+
                     $('.menu-main__link--active').removeClass('menu-main__link--active');
                     $('.menu-secondary__link--active').removeClass('menu-secondary__link--active');
                     $(this).addClass('menu-main__link--active');
@@ -287,7 +287,7 @@ $(function () {
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     if (viewportWidth < 575) {
         $("#curso-topbar__nav").removeClass("show");
-    } 
+    }
 
     $(".nav-tema-item__titulo, .nav-tema-item__btn").hover(function () {
         $(this).closest('.row').addClass('tema-activo');
@@ -296,7 +296,7 @@ $(function () {
     });
 
     //Menu responsive
-    $(".btn-menu-responsive").on('click', function(e) {
+    $(".btn-menu-responsive").on('click', function (e) {
         $(this).toggleClass('active');
     });
 
@@ -320,12 +320,14 @@ $(function () {
             document.getElementById("menuSecondary").style.width = "320px";
             document.getElementById("page-main").style.marginLeft = "320px";
             //document.getElementById("page-control").style.marginLeft = "320px";
+            $('.page-control').hide();
             boton.addClass('active');
         } else {
             document.getElementById("page-main-aside").style.width = "0";
             document.getElementById("menuSecondary").style.width = "0";
             document.getElementById("page-main").style.marginLeft = "0";
             //document.getElementById("page-control").style.marginLeft = "0px";
+            $('.page-control').show();
             boton.removeClass('active');
         }
 
@@ -336,7 +338,7 @@ $(function () {
 
     $('[data-fancybox="gallery"]').fancybox({
         // Options will go here
-    });    
+    });
 })
 
 window.addEventListener('resize', function () {
