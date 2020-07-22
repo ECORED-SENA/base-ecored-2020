@@ -191,7 +191,7 @@ function renderContent(slug, anchor) {
                 .then(data => {
                     document.getElementById('mainContent').innerHTML = data;
                     if (anchor != undefined && anchor.length > 0) {
-                        $('body,html').stop(true, true).animate({ scrollTop: $('#' + anchor).offset().top }, 1000);
+                        $('body,html').stop(true, true).animate({ scrollTop: $('#' + anchor).offset().top - $('.page-topbar').height()}, 1000);
                     } else {
                         refreshControlPage(slug);
                         $('body,html').stop(true, true).animate({ scrollTop: 0 }, 1000);
@@ -339,12 +339,14 @@ $(function () {
             document.getElementById("menuSecondary").style.width = "320px";
             document.getElementById("page-main").style.marginLeft = "320px";
             //document.getElementById("page-control").style.marginLeft = "320px";
+            $('.page-control').hide();
             boton.addClass('active');
         } else {
             document.getElementById("page-main-aside").style.width = "0";
             document.getElementById("menuSecondary").style.width = "0";
             document.getElementById("page-main").style.marginLeft = "0";
             //document.getElementById("page-control").style.marginLeft = "0px";
+            $('.page-control').show();
             boton.removeClass('active');
         }
 
