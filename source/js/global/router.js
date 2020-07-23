@@ -4,10 +4,12 @@ const baseRoutes = 'page';
 $(document).ready(() => {
   const functionModule = {
     showContent() {
-      if (this.slug == 'glosario' || this.slug == 'glossary') { renderGlossary(this.slug); } else { renderContent(this.slug); }
+      //if (this.slug == 'glosario' || this.slug == 'glossary') { renderGlossary(this.slug); } else { renderContent(this.slug); }
+      renderContent(this.slug);
     },
     anchor() {
-      if (this.slug == 'glosario' || this.slug == 'glossary') { renderGlossary(this.slug); } else { renderContent(this.slug, this.anchor); }
+      //if (this.slug == 'glosario' || this.slug == 'glossary') { renderGlossary(this.slug); } else { renderContent(this.slug, this.anchor); }
+      renderContent(this.slug, this.anchor);
     }
   };
     // Write ur urls here

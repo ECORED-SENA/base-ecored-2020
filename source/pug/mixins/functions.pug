@@ -1,30 +1,48 @@
-mixin pageHeader(tituloTema, srcImagen)
-    .page-header.mb-5
-        .page-textura
-            .container
+mixin pageHeader(tituloTema, srcImagen, pagina)
 
-                .row.align-items-center
+    .curso-portada
 
-                    .col-12.col-lg-6
+        .row.align-items-center
 
-                        h3#curso-titulo-componente.curso-subtitulo Variables y estructuras de control en la programación orientada a objetos: Java
-                        h1#curso-titulo-tema.curso-titulo Sintaxis de las variables, tipos de datos y operaciones en Java
+            .col-12.col-lg-6
 
-                        .brand-line-primary
+                h3#curso-titulo-componente.curso-subtitulo Salud Penitenciaria
+                h1#curso-titulo-tema.curso-titulo Marco normativo y sistemas penitenciarios
 
-                        .keywords
-                            span.badge.badge-pill.badge-light.mr-2 #Variables
-                            span.badge.badge-pill.badge-light.mr-2 #TiposDeDatos
-                            span.badge.badge-pill.badge-light.mr-2 #Operaciones
+                .brand-line-primary
 
+                if pagina == 'main'
 
-                        .barra-dots.mt-5
-                            img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
+                    .keywords
+                        span.badge.badge-pill.badge-light.mr-2 #Normas
+                        span.badge.badge-pill.badge-light.mr-2 #Leyes
+                        span.badge.badge-pill.badge-light.mr-2 #Decretos
 
 
-                    .col-12.col-lg-6
-                        .d-none.d-lg-block
-                            img(src= srcImagen).curso-imagen
+                    .barra-dots.mt-5
+                        img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
+
+                else 
+                    p.curso-descripcion Las personas que laboran en las áreas de sanidad de los establecimientos de reclusión penitenciarios y carcelarios en colombia requieren conocer al momento de ingresar a trabajar en el sistema, elementos conceptuales que permitan el acercamiento al conocimiento de las normas que rigen la salud penitenciaria. Se presentarán los decretos y leyes que hasta el momento rigen la práctica de la atención en el servicio de salud para las personas privadas de la libertad que deben ser tenidas en cuenta con un enfoque de servicio y compromiso con esa población vulnerable.
+        
+                if pagina == 'home'
+                    a.curso-btn-iniciar.btn.btn-light(href="main.html")
+                        span Iniciar Curso
+
+
+            .col-12.col-lg-6.text-center
+                .d-none.d-lg-block
+                    img(src= srcImagen).curso-imagen
+
+
+mixin referenciaItem(referencia, enlace, tituloenlace="")
+    p= referencia
+        if tituloenlace != ""
+            a(href= enlace, target="_blank").ml-2= tituloenlace
+        else if enlace != ""
+            a(href= enlace, target="_blank").ml-2= enlace
+    hr
+
 
 
 mixin navTemaItem(numero, titulo, ruta)
@@ -131,12 +149,13 @@ mixin creditosFooter(ruta)
                         span.text-small Responsable del equipo<br/>
 
                     p.footer-texto                           
-                        | #[strong Nombre completo]<br/>  
-                        | #[strong Nombre completo]<br/>
+                        | #[strong José Jaime Luis Tang Pinzón]<br/>  
+                        | #[strong Yazmin Rocio Figueroa Pacheco]<br/>
+                        | #[strong Martha Isabel Martínez Vargas]<br/>
                         span.text-small Diseño Web & Producción Audiovisual<br/>
 
                     p.footer-texto
-                        | #[strong Nombre completo]<br/>                                    
+                        | #[strong Edgar Mauricio Cortes García]<br/>                                    
                         span.text-small Desarrollo Front-End<br/>
 
                     p.footer-texto
