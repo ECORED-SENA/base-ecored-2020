@@ -1,18 +1,18 @@
 [
     {
-        "icon": "icon glosario",
+        "icon": "fa fa-sort-alpha-asc",
         "slug": "glosario",
         "title": "Glosario",
         "path": "pages/glosario.html"
     },   
     {
-        "icon": "fa fa-folder-open-o",
+        "icon": "fa fa-folder-open",
         "slug": "material-complementario",
         "title": "Material complementario",
         "path": "pages/material-complementario.html"
     },    
     {
-        "icon": "icon referencias",
+        "icon": "fa fa-book",
         "slug": "referencias",
         "title": "Referencias bibliográficas",
         "breadcrumb": ["Referencias bibliográficas"],

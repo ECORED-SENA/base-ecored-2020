@@ -6,24 +6,23 @@ mixin pageHeader(tituloTema, srcImagen, pagina)
 
             .col-12.col-lg-6
 
-                h3#curso-titulo-componente.curso-subtitulo Salud Penitenciaria
-                h1#curso-titulo-tema.curso-titulo Marco normativo y sistemas penitenciarios
+                h3#curso-titulo-componente.curso-subtitulo ECOSISTEMA DE RECURSOS EDUCATIVOS
+                h1#curso-titulo-tema.curso-titulo Base ECORED
 
                 .brand-line-primary
 
                 if pagina == 'main'
 
                     .keywords
-                        span.badge.badge-pill.badge-light.mr-2 #Normas
-                        span.badge.badge-pill.badge-light.mr-2 #Leyes
-                        span.badge.badge-pill.badge-light.mr-2 #Decretos
-
+                        span.badge.badge-pill.badge-light.mr-2 #Ecosistema
+                        span.badge.badge-pill.badge-light.mr-2 #Base
+                        span.badge.badge-pill.badge-light.mr-2 #ECORED
 
                     .barra-dots.mt-5
                         img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
 
                 else 
-                    p.curso-descripcion Las personas que laboran en las áreas de sanidad de los establecimientos de reclusión penitenciarios y carcelarios en colombia requieren conocer al momento de ingresar a trabajar en el sistema, elementos conceptuales que permitan el acercamiento al conocimiento de las normas que rigen la salud penitenciaria. Se presentarán los decretos y leyes que hasta el momento rigen la práctica de la atención en el servicio de salud para las personas privadas de la libertad que deben ser tenidas en cuenta con un enfoque de servicio y compromiso con esa población vulnerable.
+                    p.curso-descripcion Equipo de Ecosistema de recursos educativos SENA encargado del desarrollo y rediseño de cursos virtuales de aprendizaje para el SENA.
         
                 if pagina == 'home'
                     a.curso-btn-iniciar.btn.btn-light(href="main.html")
@@ -63,6 +62,21 @@ mixin navTemaItem(numero, titulo, ruta)
                     .avatar.avatar-sm
                         span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
                             i.fa.fa-file-text-o
+            else if numero == 'folder'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-folder-open
+            else if numero == 'references'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-book
+            else if numero == 'glosary'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-sort-alpha-asc
             else
                 .col-auto
                     .avatar.avatar-sm
@@ -117,26 +131,33 @@ mixin creditosFooter(ruta)
                         span.text-small Regional Santander    
 
                     p.footer-texto.mb-2
-                        | #[strong Julián Andrés Sánchez Torres]<br/>
-                        | #[strong Rafael Orlando López Venegas]<br/>   
+                        | #[strong James Alejandro Mendoza Avendaño]<br/>
                         span.text-small Experto temático<br/>
 
                     p.footer-texto
-                        span.text-small.text-uppercase Ministerio de Justicia
+                        span.text-small.text-uppercase Distrito Capital - Centro de Electricidad, Electrónica Y Comunicaciones - Grupo ECCL
 
                     p.footer-texto.mb-2
-                        | #[strong Oscar Absalón Guevara]<br/>   
-                        span.text-small Diseñador instruccional<br/>
+                        | #[strong María Aida Orrego Vigoya]<br/>
+                        | #[strong Yulieth Adriana Jiménez Zafra]<br/>   
+                        span.text-small Expertas temáticas<br/>
 
                     p.footer-texto
-                        span.text-small.text-uppercase Centro de Gestión Industrial	
+                        span.text-small.text-uppercase Dirección General - DSNFT - Grupo ECCL
+
+                    p.footer-texto.mb-2
+                        | #[strong Bertha Paola Bejarano Ávila]<br/>   
+                        span.text-small Diseñadora instruccional<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Distrito Capital – Centro para La Industria de la Comunicación Gráfica
 
                     p.footer-texto.mb-2
                         | #[strong Luis Fernando Botero Mendoza]<br/>   
                         span.text-small Evaluador instruccional<br/>
 
                     p.footer-texto
-                        span.text-small.text-uppercase Centro para la Industria de la Comunicación Gráfica	
+                        span.text-small.text-uppercase Distrito Capital – Centro para La Industria de la Comunicación Gráfica
 
                        
                 .col-12.col-md-5
@@ -148,14 +169,18 @@ mixin creditosFooter(ruta)
                         | #[strong Francisco José Lizcano Reyes ]<br/>   
                         span.text-small Responsable del equipo<br/>
 
+                    p.footer-texto
+                        | #[strong Leyson Fabian Castaño Perez]<br/>   
+                        span.text-small Integración de recursos y pruebas<br/>
+
                     p.footer-texto                           
-                        | #[strong José Jaime Luis Tang Pinzón]<br/>  
+                        | #[strong Daniel Ricardo Mutis Gomez]<br/>  
+                        | #[strong Lady Adriana Ariza Luque ]<br/>
                         | #[strong Yazmin Rocio Figueroa Pacheco]<br/>
-                        | #[strong Martha Isabel Martínez Vargas]<br/>
                         span.text-small Diseño Web & Producción Audiovisual<br/>
 
                     p.footer-texto
-                        | #[strong Edgar Mauricio Cortes García]<br/>                                    
+                        | #[strong Magdi Khalifah Gamboa]<br/>                                    
                         span.text-small Desarrollo Front-End<br/>
 
                     p.footer-texto

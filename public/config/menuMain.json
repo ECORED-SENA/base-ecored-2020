@@ -2,9 +2,17 @@
   {
     "icon": "fa fa-home",
     "slug": "external",
-    "title": "Volver al Inicio",
+    "title": "Volver al inicio",
     "path": "index.html"
   },  
+  { 
+    "id": 1,
+    "icon": "fa fa-play-circle",
+    "slug": "introduccion",
+    "title": "Introduccion",
+    "breadcrumb": ["Inicio","Introducción"],
+    "path": "pages/introduccion.html"     
+  },
   { 
     "id": 1,
     "icon": "fa fa-play-circle",
@@ -146,18 +154,6 @@
         "anchor": "lists"
       }      
     ]   
-  },
-
-  {
-    "id": 2,
-    "icon": "fa fa-play-circle",
-    "slug": "tema-2",
-    "title": "2. Título Tema",
-    "breadcrumb": [
-      "Inicio",
-      "Tema 2"
-    ],
-    "path": "pages/2-tema.html"
   },
   {
     "icon": "fa fa-question-circle",

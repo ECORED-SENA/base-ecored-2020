@@ -32,15 +32,16 @@ html(lang="es")
                 .row.justify-content-center
                     .col-12.col-sm-10
                         .card.wow.flipInX(data-wow-delay=".4s")
+                            
                             .card-body
+
                                 ul.list-group.list-group-flush.list.my-n3.nav-temas
                                     +navTemaItem('play', 'Introducción', '#introduccion')
-                                    +navTemaItem('1', 'Noción de derecho penitenciario', '#tema-1')
-                                    +navTemaItem('2', 'Marco normativo del Sistema Nacional Penitenciario y Carcelario', '#tema-2')
-                                    +navTemaItem('3', 'Tratamiento penitenciario en salud en Colombia', '#tema-3')
-                                    +navTemaItem('4', 'Glosario', '#glosario')
-                                    +navTemaItem('5', 'Material complementario', '#anexos')
-                                    +navTemaItem('6', 'Referencias bibliográficas', '#referencias')
+                                    +navTemaItem('1', 'Normativa vigente proceso ECCL', '#tema-1')
+                                    +navTemaItem('question', 'Actividad didáctica', '#evaluacion')
+                                    +navTemaItem('glosary', 'Glosario', '#glosario')
+                                    +navTemaItem('folder', 'Material complementario', '#anexos')
+                                    +navTemaItem('references', 'Referencias bibliográficas', '#referencias')
 
 
         section#mainContent         
@@ -48,10 +49,8 @@ html(lang="es")
                 include pages/introduccion.pug
             #tema-1
                 include pages/1-tema.pug
-            #tema-2
-                //include pages/tema-2.pug
-            #tema-3
-                //include pages/tema-3.pug
+            #evaluacion
+                include pages/actividad-1.pug
             #glosario
                 include pages/glosario.pug
             #anexos
