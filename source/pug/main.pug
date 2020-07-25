@@ -1,3 +1,5 @@
+include mixins/functions
+
 doctype
 html(lang="es")
     head
@@ -13,8 +15,10 @@ html(lang="es")
 
 
             main.mb-5
-
-                include includes/page-main_header.pug
+                #page-main-header.page-header
+                    .page-textura
+                        .container
+                            +pageHeader("Tema", "assets/images/header/header_media.svg", "main")
 
                 #mainContent
                    

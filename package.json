@@ -18,8 +18,13 @@
   "homepage": "https://github.com/ECORED-SENA/base-curso#readme",
   "dependencies": {
     "bootstrap": "^4.4.1",
+    "clear": "^0.1.0",
+    "exit": "^0.1.2",
     "font-awesome": "^4.7.0",
     "gulp-cache-bust": "^1.4.1",
+    "gulp-copy": "^4.0.1",
+    "gulp-prompt": "^1.2.0",
+    "gulp-zip": "^5.0.2",
     "jquery": "^3.5.0",
     "popper.js": "^1.16.1",
     "sass-convert": "^0.5.2"

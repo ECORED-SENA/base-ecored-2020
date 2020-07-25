@@ -4,10 +4,12 @@ const baseRoutes = 'page';
 $(document).ready(() => {
   const functionModule = {
     showContent() {
-      if (this.slug == 'glosario' || this.slug == 'glossary') { renderGlossary(this.slug); } else { renderContent(this.slug); }
+      //if (this.slug == 'glosario' || this.slug == 'glossary') { renderGlossary(this.slug); } else { renderContent(this.slug); }
+      renderContent(this.slug);
     },
     anchor() {
-      if (this.slug == 'glosario' || this.slug == 'glossary') { renderGlossary(this.slug); } else { renderContent(this.slug, this.anchor); }
+      //if (this.slug == 'glosario' || this.slug == 'glossary') { renderGlossary(this.slug); } else { renderContent(this.slug, this.anchor); }
+      renderContent(this.slug, this.anchor);
     }
   };
     // Write ur urls here
@@ -32,7 +34,7 @@ async function loadJSON(url) {
 
 function setupConfig(data) {
     //document.getElementById('curso-titulo-componente').textContent = data.programaFormacion;
-    document.title = data.tituloComponente;
+    //document.title = data.tituloComponente;
 }
 
 function crearMenuMain(menu) {
@@ -95,8 +97,8 @@ function renderMenuSecondary(data) {
                 $('.menu-secondary__link--active').removeClass('menu-secondary__link--active');
                 $(this).addClass('menu-secondary__link--active');
 
-                $('#page-main-header').show();
-                document.getElementById('curso-titulo-tema').textContent = $(this).find('.menu-secondary__texto').html();
+                //$('#page-main-header').show();
+                //document.getElementById('curso-titulo-tema').textContent = $(this).find('.menu-secondary__texto').html();
             }
 
         });
@@ -119,7 +121,7 @@ function renderMenuMain(data) {
 
             let anchor = button.getAttribute("data-anchor");
 
-            $('#page-main-header').hide();
+            //$('#page-main-header').hide();
 
             $('.menu-main__link--active').removeClass('menu-main__link--active');
             $('.menu-secondary__link--active').removeClass('menu-secondary__link--active');
@@ -138,8 +140,7 @@ function renderMenuMain(data) {
             let anchor = button.getAttribute("data-anchor");
             $.routes.find("anchor").routeTo({ slug: route, anchor: anchor });
 
-            $('#page-main-header').hide();
-
+            //$('#page-main-header').hide();
             $('.menu-main__link--active').removeClass('menu-main__link--active');
             $('.menu-secondary__link--active').removeClass('menu-secondary__link--active');
             $(this).addClass('menu-main__link--active');
@@ -198,7 +199,7 @@ function renderContent(slug, anchor) {
                     }
                 });
 
-            document.getElementById('curso-titulo-componente').textContent = dataGlobal.tituloComponente;
+            //document.getElementById('curso-titulo-componente').textContent = dataGlobal.tituloComponente;
 
         } else {
             document.getElementsByClassName('menu-main__link')[0].click();
@@ -236,7 +237,8 @@ async function initContent() {
         let index = navItems.findIndex((element) => element.getAttribute("data-route") == slug);
         if (index != -1) {
             navItems[index].click();
-            if (this.slug == "glosario" || this.slug == "glossary") { renderGlossary(slug); } else { renderContent(slug); }
+            //if (this.slug == "glosario" || this.slug == "glossary") { renderGlossary(slug); } else { renderContent(slug); }
+            renderContent(slug);
         } else {
             navItems[0].click();
             console.log("Render initial: Contenido del hash no encontrado, json de configuración.");
@@ -250,11 +252,11 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     if ($("#page-main").length) {
 
-        $('#page-main-header').hide();
+        //$('#page-main-header').hide();
 
-        await loadJSON('config/global.json').then(data => {
+        /*await loadJSON('config/global.json').then(data => {
             dataGlobal = data; setupConfig(data);
-        });
+        });*/
 
         await loadJSON('config/menuMain.json').then(data => {
             dataMenuMain = data;
@@ -279,12 +281,12 @@ document.addEventListener("DOMContentLoaded", async function () {
 
                     $.routes.find('path').routeTo({ slug: hashPageControl });
 
-                    $('#page-main-header').hide();
+                    //$('#page-main-header').hide();
                     
                     $('.menu-main__link--active').removeClass('menu-main__link--active');
                     $('.menu-secondary__link--active').removeClass('menu-secondary__link--active');
                     $(this).addClass('menu-main__link--active');
-                    document.getElementById('curso-titulo-tema').textContent = $(element).find('.menu-main__texto').html();
+                    //document.getElementById('curso-titulo-tema').textContent = $(element).find('.menu-main__texto').html();
 
                 }
             })

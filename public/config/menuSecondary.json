@@ -1,37 +1,27 @@
 [
     {
-        "icon": "fa fa-download",
-        "slug": "pdf",
-        "title": "Descargar PDF",
-        "path": "media/documentos/MF2_Sintaxis_de_las_variables_tipos_de_datos_y_operaciones_en_Java.pdf"
-    },
-    {
-        "icon": "icon glosario",
+        "icon": "fa fa-sort-alpha-asc",
         "slug": "glosario",
         "title": "Glosario",
-        "breadcrumb": ["Glosario"],
-        "path": "config/glosario.json"
+        "path": "pages/glosario.html"
     },   
     {
-        "icon": "fa fa-folder-open-o",
+        "icon": "fa fa-folder-open",
         "slug": "material-complementario",
         "title": "Material complementario",
         "path": "pages/material-complementario.html"
     },    
     {
-        "icon": "icon referencias",
+        "icon": "fa fa-book",
         "slug": "referencias",
         "title": "Referencias bibliográficas",
         "breadcrumb": ["Referencias bibliográficas"],
         "path": "pages/referencias.html"
     },
     {
-        "icon": "fa fa-copyright",
-        "slug": "creditos",
-        "title": "Créditos",
-        "breadcrumb": [
-            "Créditos"
-        ],
-        "path": "pages/creditos.html"
+        "icon": "fa fa-download",
+        "slug": "external",
+        "title": "Descargar material",
+        "path": "download/material.zip"
     }    
 ]

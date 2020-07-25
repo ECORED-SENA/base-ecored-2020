@@ -1,30 +1,47 @@
-mixin pageHeader(tituloTema, srcImagen)
-    .page-header.mb-5
-        .page-textura
-            .container
+mixin pageHeader(tituloTema, srcImagen, pagina)
 
-                .row.align-items-center
+    .curso-portada
 
-                    .col-12.col-lg-6
+        .row.align-items-center
 
-                        h3#curso-titulo-componente.curso-subtitulo Variables y estructuras de control en la programación orientada a objetos: Java
-                        h1#curso-titulo-tema.curso-titulo Sintaxis de las variables, tipos de datos y operaciones en Java
+            .col-12.col-lg-6
 
-                        .brand-line-primary
+                h3#curso-titulo-componente.curso-subtitulo ECOSISTEMA DE RECURSOS EDUCATIVOS
+                h1#curso-titulo-tema.curso-titulo Base ECORED
 
-                        .keywords
-                            span.badge.badge-pill.badge-light.mr-2 #Variables
-                            span.badge.badge-pill.badge-light.mr-2 #TiposDeDatos
-                            span.badge.badge-pill.badge-light.mr-2 #Operaciones
+                .brand-line-primary
+
+                if pagina == 'main'
+
+                    .keywords
+                        span.badge.badge-pill.badge-light.mr-2 #Ecosistema
+                        span.badge.badge-pill.badge-light.mr-2 #Base
+                        span.badge.badge-pill.badge-light.mr-2 #ECORED
+
+                    .barra-dots.mt-5
+                        img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
+
+                else 
+                    p.curso-descripcion Equipo de Ecosistema de recursos educativos SENA encargado del desarrollo y rediseño de cursos virtuales de aprendizaje para el SENA.
+        
+                if pagina == 'home'
+                    a.curso-btn-iniciar.btn.btn-light(href="main.html")
+                        span Iniciar Curso
 
 
-                        .barra-dots.mt-5
-                            img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
+            .col-12.col-lg-6.text-center
+                .d-none.d-lg-block
+                    img(src= srcImagen).curso-imagen
 
 
-                    .col-12.col-lg-6
-                        .d-none.d-lg-block
-                            img(src= srcImagen).curso-imagen
+mixin referenciaItem(referencia, enlace, tituloenlace="")
+    p= referencia
+        if tituloenlace != ""
+            a(href= enlace, target="_blank").ml-2= tituloenlace
+        else if enlace != ""
+            a(href= enlace, target="_blank").ml-2= enlace
+    hr
+
 
 
 mixin navTemaItem(numero, titulo, ruta)
@@ -45,6 +62,21 @@ mixin navTemaItem(numero, titulo, ruta)
                     .avatar.avatar-sm
                         span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
                             i.fa.fa-file-text-o
+            else if numero == 'folder'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-folder-open
+            else if numero == 'references'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-book
+            else if numero == 'glosary'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-sort-alpha-asc
             else
                 .col-auto
                     .avatar.avatar-sm
@@ -99,26 +131,33 @@ mixin creditosFooter(ruta)
                         span.text-small Regional Santander    
 
                     p.footer-texto.mb-2
-                        | #[strong Nombre completo]<br/>
-                        | #[strong Nombre completo]<br/>   
+                        | #[strong James Alejandro Mendoza Avendaño]<br/>
                         span.text-small Experto temático<br/>
 
                     p.footer-texto
-                        span.text-small.text-uppercase Centro de formación o Institución
+                        span.text-small.text-uppercase Distrito Capital - Centro de Electricidad, Electrónica Y Comunicaciones - Grupo ECCL
 
                     p.footer-texto.mb-2
-                        | #[strong Nombre completo]<br/>   
-                        span.text-small Diseñador instruccional<br/>
+                        | #[strong María Aida Orrego Vigoya]<br/>
+                        | #[strong Yulieth Adriana Jiménez Zafra]<br/>   
+                        span.text-small Expertas temáticas<br/>
 
                     p.footer-texto
-                        span.text-small.text-uppercase Centro de formación	
+                        span.text-small.text-uppercase Dirección General - DSNFT - Grupo ECCL
 
                     p.footer-texto.mb-2
-                        | #[strong Nombre completo]<br/>   
+                        | #[strong Bertha Paola Bejarano Ávila]<br/>   
+                        span.text-small Diseñadora instruccional<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Distrito Capital – Centro para La Industria de la Comunicación Gráfica
+
+                    p.footer-texto.mb-2
+                        | #[strong Luis Fernando Botero Mendoza]<br/>   
                         span.text-small Evaluador instruccional<br/>
 
                     p.footer-texto
-                        span.text-small.text-uppercase Centro de formación	
+                        span.text-small.text-uppercase Distrito Capital – Centro para La Industria de la Comunicación Gráfica
 
                        
                 .col-12.col-md-5
@@ -130,13 +169,18 @@ mixin creditosFooter(ruta)
                         | #[strong Francisco José Lizcano Reyes ]<br/>   
                         span.text-small Responsable del equipo<br/>
 
+                    p.footer-texto
+                        | #[strong Leyson Fabian Castaño Perez]<br/>   
+                        span.text-small Integración de recursos y pruebas<br/>
+
                     p.footer-texto                           
-                        | #[strong Nombre completo]<br/>  
-                        | #[strong Nombre completo]<br/>
+                        | #[strong Daniel Ricardo Mutis Gomez]<br/>  
+                        | #[strong Lady Adriana Ariza Luque ]<br/>
+                        | #[strong Yazmin Rocio Figueroa Pacheco]<br/>
                         span.text-small Diseño Web & Producción Audiovisual<br/>
 
                     p.footer-texto
-                        | #[strong Nombre completo]<br/>                                    
+                        | #[strong Magdi Khalifah Gamboa]<br/>                                    
                         span.text-small Desarrollo Front-End<br/>
 
                     p.footer-texto
