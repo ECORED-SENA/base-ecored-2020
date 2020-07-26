@@ -27,6 +27,9 @@
   padding-top: $card-spacer-y / 2;
   padding-bottom: $card-spacer-y / 2;
 
+  background-color: white;
+  border-bottom: 3px solid #2B4E6A;
+
   > *:first-child {
     flex: 1;
   }
@@ -35,7 +38,7 @@
 .btn-link
 {
   width: 100%;
-  height: 60px;
+  //height: 60px;
   color: white !important;
   font-weight: bold !important;
   text-align: left !important;
@@ -49,11 +52,11 @@
   width: 35px;
   font-size: 25px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 0px;
   right: 15px;
   top: 11px;
   position: absolute;
-  background: #2B4E6A;
+  background: $orange;
 }
 
 .btn-link.collapsed:after
