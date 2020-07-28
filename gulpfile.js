@@ -263,8 +263,12 @@ gulp.task('watch', done => {
   done();
 });
 
+/**
+ * @description
+ * Inicia la carga del menú definido por defecto con las funciones permitidas.
+ */
 gulp.task(
-  "desarrollo",
+  "default",
   gulp.series(
     "json",
     "media",
@@ -280,43 +284,3 @@ gulp.task(
     "watch"
   )
 );
-
-gulp.task(
-  "creoQueTermine",
-  gulp.series(
-    "json",
-    "media",
-    "font-awesome",
-    "jsVendor",
-    "jsGlobal",
-    "jsContent",
-    "pugRoot",
-    "pugPages",
-    "sass",
-    "cssVendor",
-    "crearZip"
-  )
-);
-/**
- * @description
- * Inicia la carga del menú definido por defecto con las funciones permitidas.
- */
-gulp.task('default', () => {
-  clear();
-  console.log('Versión: 1.0');
-  return gulp
-    .src('package.json')
-    .pipe(gulpPrompt.prompt({
-      type: 'list',
-      name: 'menu',
-      message: 'Seleccione una acción:',
-      choices: [
-        'desarrollo',
-        'crearZip',
-        'salir'
-      ],
-      pageSize: '5'
-    }, (res) => {
-      gulp.series(res.menu)();
-    }));
-});
