@@ -194,7 +194,10 @@ function renderContent(slug, anchor) {
                     if (anchor != undefined && anchor.length > 0) {
                         $('body,html').stop(true, true).animate({ scrollTop: $('#' + anchor).offset().top - $('.page-topbar').height()}, 1000);
                     } else {
-                        refreshControlPage(slug);
+                        if (slug != "glosario" && slug != "material-complementario" && slug != "referencias") {
+                            //console.log(slug)
+                            refreshControlPage(slug);
+                        }
                         $('body,html').stop(true, true).animate({ scrollTop: 0 }, 1000);
                     }
                 });
@@ -215,9 +218,7 @@ function renderContent(slug, anchor) {
 }
 
 function refreshControlPage(actualHash) {
-    
     let navItems = Array.from(document.getElementsByClassName('no-anchor'));
-    
     let navItemIndex = navItems.findIndex((element) => element.getAttribute("data-route") == actualHash);
     (navItemIndex == 0) ? document.getElementById('back').removeAttribute('href'): document.getElementById('back').setAttribute('href', navItems[navItemIndex - 1].getAttribute('data-route'));
     (navItemIndex == (navItems.length - 1)) ? document.getElementById('next').removeAttribute('href'): document.getElementById('next').setAttribute('href', navItems[navItemIndex + 1].getAttribute('data-route'));
@@ -228,7 +229,7 @@ async function initContent() {
     let navItems = Array.from(document.getElementsByClassName('is-content'));
 
     if (!(window.location.hash[window.location.hash.length - 1] == '/')) {
-        window.location.hash = window.location.hash + '/';
+        window.location.hash = window.location.hash + '/';  
     }
 
     if (window.location.hash.length > 2) {
@@ -304,6 +305,8 @@ INICIAMOS WOW
 new WOW().init();
 
 $(function () {
+
+    //pagemap(document.querySelector("#map"));
 
     var viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     if (viewportWidth < 575) {
