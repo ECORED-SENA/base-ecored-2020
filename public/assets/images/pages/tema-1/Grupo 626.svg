@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="517.699" height="613.254" viewBox="0 0 517.699 613.254">
+  <defs>
+    <filter id="Trazado_2" x="0" y="0" width="517.699" height="613.254" filterUnits="userSpaceOnUse">
+      <feOffset dx="7.087" dy="7" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-color="#4c4c4c" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_626" data-name="Grupo 626" transform="translate(-743.58 -3406.316)">
+    <g transform="matrix(1, 0, 0, 1, 743.58, 3406.32)" filter="url(#Trazado_2)">
+      <path id="Trazado_2-2" data-name="Trazado 2" d="M744.993,3983.391V3428.5a30.766,30.766,0,0,1,.264-4.035,28.732,28.732,0,0,1,.785-3.879,25.266,25.266,0,0,1,1.273-3.575,21.15,21.15,0,0,1,1.714-3.134,16.9,16.9,0,0,1,2.088-2.571,13.272,13.272,0,0,1,2.383-1.912,10.685,10.685,0,0,1,2.585-1.176,9.34,9.34,0,0,1,2.688-.4h473.138a9.351,9.351,0,0,1,2.689.4,10.7,10.7,0,0,1,2.585,1.176,13.236,13.236,0,0,1,2.382,1.912,16.847,16.847,0,0,1,2.089,2.571,21.156,21.156,0,0,1,1.714,3.134,25.388,25.388,0,0,1,1.273,3.575,28.721,28.721,0,0,1,.784,3.879,30.6,30.6,0,0,1,.265,4.035v554.9a30.594,30.594,0,0,1-.265,4.034,28.721,28.721,0,0,1-.784,3.879,25.388,25.388,0,0,1-1.273,3.575,21.156,21.156,0,0,1-1.714,3.134,16.9,16.9,0,0,1-2.089,2.572,13.262,13.262,0,0,1-2.382,1.911,10.713,10.713,0,0,1-2.585,1.176,9.36,9.36,0,0,1-2.689.4H758.773a9.348,9.348,0,0,1-2.688-.4,10.7,10.7,0,0,1-2.585-1.176,13.3,13.3,0,0,1-2.383-1.911,16.954,16.954,0,0,1-2.088-2.572,21.15,21.15,0,0,1-1.714-3.134,25.266,25.266,0,0,1-1.273-3.575,28.732,28.732,0,0,1-.785-3.879A30.762,30.762,0,0,1,744.993,3983.391Z" transform="translate(-743.58 -3406.32)" fill="#fff" stroke="#b2b2b2" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <text id="Colombia_desde_la_década_del_2000_viene_adelantado_la_política_pública_de_Ciencia_Tecnología_e_Innovación_por_sus_siglas:_CT_I_._Con_el_CONPES_3080_de_2000_estableció_los_lineamientos_de_esta_política_que_entre_otros_temas_buscaba_orientar_la_conformac" data-name="Colombia, desde la década del 2000 viene adelantado la política pública de Ciencia, Tecnología e Innovación (por sus siglas: CT&amp;I). Con el CONPES 3080 de 2000 estableció los lineamientos de esta política, que entre otros temas buscaba orientar la conformac" transform="translate(768.562 3516.809)" fill="#444242" font-size="16" font-family="OpenSans, Open Sans"><tspan x="0" y="17">Colombia, desde la década del 2000 viene adelantado la </tspan><tspan x="0" y="39">política pública de Ciencia, Tecnología e Innovación (por </tspan><tspan x="0" y="61">sus siglas: CT&amp;I). Con el CONPES 3080 de 2000 estableció </tspan><tspan x="0" y="83">los lineamientos de esta política, que entre otros temas </tspan><tspan x="0" y="105">buscaba orientar la conformación de los Consejos </tspan><tspan x="0" y="127">Departamentales de Ciencia, Tecnología e Innovación (por </tspan><tspan x="0" y="149">sus siglas: CODECTI). Con el fin de construir o consolidar </tspan><tspan x="0" y="171">una institucionalidad regional que fomentaran o </tspan><tspan x="0" y="193">fortaleciera el uso de la CT&amp;I para fortalecer los campos </tspan><tspan x="0" y="215">productivos y sociales mediante la generación, uso y </tspan><tspan x="0" y="237">apropiación del conocimiento; además, que, agreguen </tspan><tspan x="0" y="259">valor a productos y servicios en los sectores económico, </tspan><tspan x="0" y="281">social y ambiental, y mejore la calidad de vida de la </tspan><tspan x="0" y="303">población. Por lo tanto, es considerada un eje transversal a </tspan><tspan x="0" y="325">todas las dimensiones del sistema. De esta manera, se dio </tspan><tspan x="0" y="347">inicio a los Sistemas Regionales de Ciencia, Tecnología e </tspan><tspan x="0" y="369">Innovación (en adelante SRCTI). (Caicedo, 2015), este </tspan><tspan x="0" y="391">concepto es equivalente al de Sistemas Regionales de </tspan><tspan x="0" y="413">Innovación, SRI, propuesto por Cooke, Gómez &amp; Etxebarria </tspan><tspan x="0" y="435">(1997).</tspan><tspan x="0" y="457"></tspan></text>
+    <text id="Nivel_regional" data-name="Nivel regional" transform="translate(856.878 3494.797)" fill="#414651" font-size="20" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">Nivel regional</tspan></text>
+    <g id="Grupo_74" data-name="Grupo 74">
+      <g id="Grupo_70" data-name="Grupo 70">
+        <g id="Grupo_69" data-name="Grupo 69">
+          <g id="Grupo_61" data-name="Grupo 61">
+            <path id="Trazado_56" data-name="Trazado 56" d="M817.32,3435.612a27.492,27.492,0,1,0,0,38.879A27.492,27.492,0,0,0,817.32,3435.612Zm-3.189,35.691a22.982,22.982,0,1,1,0-32.5A22.981,22.981,0,0,1,814.131,3471.3Z" fill="#ccdcea"/>
+          </g>
+          <g id="Grupo_62" data-name="Grupo 62">
+            <path id="Trazado_57" data-name="Trazado 57" d="M839.248,3491.188a2.807,2.807,0,0,1,.289,3.9l-2.645,2.645a2.807,2.807,0,0,1-3.9-.289l-10.061-10.061a2.734,2.734,0,0,1-.236-3.846l2.646-2.645a2.735,2.735,0,0,1,3.846.235Z" fill="#a3bd31"/>
+          </g>
+          <g id="Grupo_63" data-name="Grupo 63">
+            <path id="Trazado_58" data-name="Trazado 58" d="M796.733,3481.523a28.592,28.592,0,1,1,20.234-8.368A28.518,28.518,0,0,1,796.733,3481.523Zm0-54.97a26.368,26.368,0,1,0,18.645,7.723A26.2,26.2,0,0,0,796.733,3426.553Z" fill="#414651"/>
+          </g>
+          <g id="Grupo_64" data-name="Grupo 64">
+            <path id="Trazado_59" data-name="Trazado 59" d="M796.733,3476.608a23.687,23.687,0,1,1,16.757-6.93A23.623,23.623,0,0,1,796.733,3476.608Zm0-46.026a22.339,22.339,0,1,0,15.8,6.536A22.274,22.274,0,0,0,796.733,3430.582Z" fill="#414651"/>
+          </g>
+          <g id="Grupo_65" data-name="Grupo 65">
+            <path id="Trazado_60" data-name="Trazado 60" d="M822.641,3482.17l-8.162-8.163,5.234-5.234,8.163,8.162Zm-6.54-8.163,6.54,6.541,3.612-3.613-6.54-6.54Z" fill="#414651"/>
+          </g>
+          <g id="Grupo_66" data-name="Grupo 66">
+            <path id="Trazado_61" data-name="Trazado 61" d="M835.488,3495.893c-.05,0-.1,0-.152,0a3.564,3.564,0,0,1-2.365-1.046l-10.061-10.062a3.437,3.437,0,0,1-1.02-2.347,3.14,3.14,0,0,1,.918-2.329l2.84-2.84a3.142,3.142,0,0,1,2.329-.918,3.439,3.439,0,0,1,2.347,1.02l10.062,10.061a3.56,3.56,0,0,1,1.046,2.365,3.105,3.105,0,0,1-.891,2.365L837.7,3495A3.084,3.084,0,0,1,835.488,3495.893Zm-7.6-18.559a2.162,2.162,0,0,0-1.546.629l-2.84,2.84a2.164,2.164,0,0,0-.629,1.607,2.456,2.456,0,0,0,.731,1.675l10.062,10.061a2.6,2.6,0,0,0,1.71.758,2.141,2.141,0,0,0,1.625-.6l2.84-2.84a2.128,2.128,0,0,0,.6-1.625,2.6,2.6,0,0,0-.758-1.71l-10.061-10.062a2.456,2.456,0,0,0-1.675-.731Z" fill="#414651"/>
+          </g>
+          <g id="Grupo_67" data-name="Grupo 67">
+            <path id="Trazado_62" data-name="Trazado 62" d="M835.489,3496.3c-.057,0-.114,0-.171,0a3.964,3.964,0,0,1-2.634-1.165l-10.061-10.061a3.836,3.836,0,0,1-1.138-2.623,3.545,3.545,0,0,1,1.036-2.627l2.84-2.84a3.545,3.545,0,0,1,2.627-1.036,3.836,3.836,0,0,1,2.623,1.138l10.062,10.061a3.963,3.963,0,0,1,1.164,2.635,3.509,3.509,0,0,1-1.009,2.669l-2.84,2.84A3.491,3.491,0,0,1,835.489,3496.3Zm-7.6-18.56a1.757,1.757,0,0,0-1.259.511l-2.84,2.84a1.765,1.765,0,0,0-.51,1.31,2.05,2.05,0,0,0,.612,1.4l10.062,10.061a2.193,2.193,0,0,0,1.44.64,1.73,1.73,0,0,0,1.321-.484l2.84-2.84a1.734,1.734,0,0,0,.484-1.321,2.2,2.2,0,0,0-.639-1.441l-10.062-10.061a2.051,2.051,0,0,0-1.4-.612Z" fill="#414651"/>
+          </g>
+          <g id="Grupo_68" data-name="Grupo 68">
+            <path id="Trazado_63" data-name="Trazado 63" d="M834.955,3492.76a.491.491,0,0,1-.348-.144l-9.437-9.437a.493.493,0,0,1,.7-.7l9.437,9.437a.493.493,0,0,1-.349.841Z" fill="#414651"/>
+          </g>
+          <path id="CO-SAN" d="M791.019,3446.655l.287-2.356.66-1.436.663-1,.3-2.463-.249-1.193-.287-.572-.469-1.492-.012-.465-.008-.514.082-.343.244-.558.609-.532.427-.243.214.365.624,1.138.315.661.547,1.481-.12.623-.315.484-.372.532-.148.55.21.4.981.063.68.051.411.355.078.192.574.266.633.6.2.536.361.288.314.1,2.211.643,1.057-.086.336-.535.191-.3.326-.166,3.019.011.392.1,1.355,2.23.213.4.427,1.093.061.362v.351l-.154,1.757.093,2.452,3.2,1.289.353-.229,1.157-.307.26.233.019.562-.062.6.213.24h.33l.215-.074.119.251.16.473.181,2.23-.026.447-.1.4-.741,2.034-.183.351-.26.3-.308.173-.372.078-.837.025-.295-1.008-.206-.436-.92-.542-.469.07-.012,1.529.112.531.253.381.248.439.043.768-.241.635-.426.746-2.965,3.49-1.169,1.1-1.005-.152-.434-.081-.454.048-.342.085-.434.2-.256.269-.067.451.2.528-.066.366-.271.277-.893.4-.481.052-.536-.144-.345-.255-.24-.439-.1-.624.062-.377.427-.764.121-.414.038-.332-.031-.414-.155-.35-.307-.274-1.87-.938-.493.632-.947,2.182-.306,1.75-.066.318-.268.879-.389.247-.485-.306-.508-.384-2.1.229-1.9.447-.315-.248-.3-.749-.269-.248-1.735-.923-1.443-1.274-.738-1.5-.407-.14-.419.122-.291.151-.3.126-.453-.126-.551-.48-.617-.879-.843-1.3-.539-.6.636-.258.377-.266,1.509-1.6.136-.318-.407-.638-.128-1.3.151-.52.578-.684.505-.014,1.051-.466,1.89-1.4.493-.373.248-.233.3-.5.42-.665.822-.838.543-.277.726-.31.722-.628.026-.388-.178-.6-.3-.343-.2-.385-.19-1.61,0-.313.081-.451Z" fill="#9b9b9b"/>
+        </g>
+      </g>
+      <g id="Grupo_73" data-name="Grupo 73">
+        <g id="Grupo_71" data-name="Grupo 71">
+          <path id="Trazado_64" data-name="Trazado 64" d="M798.306,3480.977a6.352,6.352,0,1,0-6.016-6.01A6.352,6.352,0,0,0,798.306,3480.977Z" fill="#a3bd31"/>
+          <path id="Trazado_65" data-name="Trazado 65" d="M798.625,3481.8q-.18,0-.36-.009h0a7.191,7.191,0,1,1,.36.009Zm-.278-1.645a5.533,5.533,0,1,0-5.238-5.234,5.548,5.548,0,0,0,5.238,5.234Z" fill="#414651"/>
+        </g>
+        <g id="Grupo_72" data-name="Grupo 72">
+          <path id="Trazado_66" data-name="Trazado 66" d="M807.917,3494.664a2.091,2.091,0,0,0,2.046-2.507c-1.1-5.51-5.6-10.44-10.981-10.44s-9.88,4.93-10.98,10.44a2.091,2.091,0,0,0,2.047,2.507Z" fill="#a3bd31"/>
+          <path id="Trazado_67" data-name="Trazado 67" d="M807.917,3495.484H790.049A2.911,2.911,0,0,1,787.2,3492c1.263-6.328,6.329-11.1,11.783-11.1s10.521,4.771,11.785,11.1a2.912,2.912,0,0,1-2.85,3.487Zm-8.935-12.947c-5.147,0-9.216,4.973-10.176,9.781a1.276,1.276,0,0,0,.264,1.064,1.263,1.263,0,0,0,.979.463h17.868a1.261,1.261,0,0,0,.978-.463,1.276,1.276,0,0,0,.265-1.064C808.2,3487.51,804.13,3482.537,798.982,3482.537Z" fill="#414651"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

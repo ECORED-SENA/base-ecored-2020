@@ -4,32 +4,38 @@ mixin pageHeader(tituloTema, srcImagen, pagina)
 
         .row.align-items-center
 
-            .col-12.col-lg-6
+            .col-12.col-lg-8
 
-                h3#curso-titulo-componente.curso-subtitulo ECOSISTEMA DE RECURSOS EDUCATIVOS
-                h1#curso-titulo-tema.curso-titulo Base ECORED
+                h3#curso-titulo-componente.curso-subtitulo Formación de líderes en innovación transformativa, gobernanza, sistemas de ciencia, tecnología e innovación (sc&cti) y objetivos de desarrollo sostenible (ods)
+                h1#curso-titulo-tema.curso-titulo Objetivos de desarrollo sostenible y políticas públicas de la ciencia, la tecnología y la innovación (CTeI)
 
                 .brand-line-primary
 
                 if pagina == 'main'
 
                     .keywords
-                        span.badge.badge-pill.badge-light.mr-2 #Ecosistema
-                        span.badge.badge-pill.badge-light.mr-2 #Base
-                        span.badge.badge-pill.badge-light.mr-2 #ECORED
+                        span.badge.badge-pill.badge-light.mr-2 #Desarrollo
+                        span.badge.badge-pill.badge-light.mr-2 #Innovación
+                        span.badge.badge-pill.badge-light.mr-2 #Gobernanza
 
                     .barra-dots.mt-5
                         img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
-
+                        br
+                        br
                 else 
-                    p.curso-descripcion Equipo de Ecosistema de recursos educativos SENA encargado del desarrollo y rediseño de cursos virtuales de aprendizaje para el SENA.
+                    p.curso-descripcion El objetivo de este componente es brindar a los participantes los elementos necesarios para que puedan entender la lógica de los Objetivos de Desarrollo Sostenible y sus implicaciones en las organizaciones y las dinámicas del territorio, teniendo en cuenta las políticas públicas de CTeI.
         
                 if pagina == 'home'
                     a.curso-btn-iniciar.btn.btn-light(href="main.html")
                         span Iniciar curso
+                    br
+                    br 
+                    br
+                     
+                   
 
 
-            .col-12.col-lg-6.text-center
+            .col-12.col-lg-3.text-center
                 .d-none.d-lg-block
                     img(src= srcImagen).curso-imagen
 
