@@ -1,15 +1,14 @@
-h2 Desarrollo de <br>contenidos
-.brand-line-primary
+.jumbotron 
+    h2 Desarrollo de <br>contenidos
+        .row.justify-content-center.mt-5
+            .col-12.col-sm-10
 
+                .card.wow.flipInX(data-wow-delay=".4s")
+                    
+                    .card-body
 
-.row.justify-content-center
-    .col-12.col-sm-10
-
-        .card.wow.flipInX(data-wow-delay=".4s")
-            
-            .card-body
-
-                ul.list-group.list-group-flush.list.my-n3.nav-temas
-                    +navTemaItem('play', 'Introducción', 'main.html#page/introduccion/')
-                    +navTemaItem('1', 'Componentes', 'main.html#page/componentes-bs/')
-                    +navTemaItem('question', 'Actividad didáctica', 'main.html#page/actividad-1/')
+                        ul.list-group.list-group-flush.list.my-n3.nav-temas
+                            +navTemaItem('play', 'Introducción', 'main.html#page/introduccion/')
+                            +navTemaItem('1', 'Redes de datos', 'main.html#page/componentes-bs/')
+                            +navTemaItem('2', 'Tecnología y conceptos basicos de networking', 'main.html#page/actividad-1/')
+                            +navTemaItem('3', 'Diseño e implementación de la red LAN', 'main.html#page/actividad-1/')

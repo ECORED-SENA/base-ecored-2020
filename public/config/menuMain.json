@@ -17,7 +17,7 @@
     "id": 1,
     "icon": "fa fa-play-circle",
     "slug": "componentes-bs",
-    "title": "1. Componentes",
+    "title": "Redes de datos",
     "breadcrumb": ["Inicio","Introducción"],
     "path": "pages/1-tema.html",    
     "submenu": [
