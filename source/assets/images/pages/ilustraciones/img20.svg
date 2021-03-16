@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="766" height="146" viewBox="0 0 766 146">
+  <defs>
+    <filter id="Rectángulo_26469" x="0" y="49" width="240" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_26470" x="0" y="49" width="57" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_26469-2" x="263" y="49" width="240" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_26470-2" x="263" y="49" width="57" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_26469-3" x="526" y="49" width="240" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_26470-3" x="526" y="49" width="57" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_26469-4" x="0" y="94" width="240" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-7"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_26470-4" x="0" y="94" width="57" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-8"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_26469-5" x="263" y="94" width="240" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-9"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_26470-5" x="263" y="94" width="57" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-10"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_26469-6" x="526" y="94" width="240" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-11"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-11"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectángulo_26470-6" x="526" y="94" width="57" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-12"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-12"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_33924" data-name="Grupo 33924" transform="translate(-282 -9381)">
+    <text id="Ejemplos:" transform="translate(291 9381)" fill="#37a3a5" font-size="24" font-family="Roboto-Black, Roboto" font-weight="800"><tspan x="0" y="23">Ejemplos:</tspan></text>
+    <g id="Grupo_33174" data-name="Grupo 33174" transform="translate(79 7495.94)">
+      <g transform="matrix(1, 0, 0, 1, 203, 1885.06)" filter="url(#Rectángulo_26469)">
+        <rect id="Rectángulo_26469-7" data-name="Rectángulo 26469" width="222" height="34" rx="10" transform="translate(9 55)" fill="#f9f9f9"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 203, 1885.06)" filter="url(#Rectángulo_26470)">
+        <rect id="Rectángulo_26470-7" data-name="Rectángulo 26470" width="39" height="34" rx="10" transform="translate(9 55)" fill="#21587b" opacity="0.8"/>
+      </g>
+      <text id="NetBIOS" transform="translate(259.946 1947.868)" fill="#00223d" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="15">NetBIOS</tspan></text>
+      <text id="a." transform="translate(223 1942.06)" fill="#fbf9f4" font-size="24" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="23">a.</tspan></text>
+    </g>
+    <g id="Grupo_33177" data-name="Grupo 33177" transform="translate(342 7495.94)">
+      <g transform="matrix(1, 0, 0, 1, -60, 1885.06)" filter="url(#Rectángulo_26469-2)">
+        <rect id="Rectángulo_26469-8" data-name="Rectángulo 26469" width="222" height="34" rx="10" transform="translate(272 55)" fill="#f9f9f9"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -60, 1885.06)" filter="url(#Rectángulo_26470-2)">
+        <rect id="Rectángulo_26470-8" data-name="Rectángulo 26470" width="39" height="34" rx="10" transform="translate(272 55)" fill="#21587b" opacity="0.8"/>
+      </g>
+      <text id="IPX" transform="translate(259.946 1947.868)" fill="#00223d" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="15">IPX</tspan></text>
+      <text id="c." transform="translate(223 1942.06)" fill="#fbf9f4" font-size="24" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="23">c.</tspan></text>
+    </g>
+    <g id="Grupo_33179" data-name="Grupo 33179" transform="translate(605 7495.94)">
+      <g transform="matrix(1, 0, 0, 1, -323, 1885.06)" filter="url(#Rectángulo_26469-3)">
+        <rect id="Rectángulo_26469-9" data-name="Rectángulo 26469" width="222" height="34" rx="10" transform="translate(535 55)" fill="#f9f9f9"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -323, 1885.06)" filter="url(#Rectángulo_26470-3)">
+        <rect id="Rectángulo_26470-9" data-name="Rectángulo 26470" width="39" height="34" rx="10" transform="translate(535 55)" fill="#21587b" opacity="0.8"/>
+      </g>
+      <text id="DECnet" transform="translate(259.946 1947.868)" fill="#00223d" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="15">DECnet</tspan></text>
+      <text id="e." transform="translate(223 1942.06)" fill="#fbf9f4" font-size="24" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="23">e.</tspan></text>
+    </g>
+    <g id="Grupo_33175" data-name="Grupo 33175" transform="translate(79 7540.94)">
+      <g transform="matrix(1, 0, 0, 1, 203, 1840.06)" filter="url(#Rectángulo_26469-4)">
+        <rect id="Rectángulo_26469-10" data-name="Rectángulo 26469" width="222" height="34" rx="10" transform="translate(9 100)" fill="#f9f9f9"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 203, 1840.06)" filter="url(#Rectángulo_26470-4)">
+        <rect id="Rectángulo_26470-10" data-name="Rectángulo 26470" width="39" height="34" rx="10" transform="translate(9 100)" fill="#21587b" opacity="0.8"/>
+      </g>
+      <text id="NetBEUI" transform="translate(259.946 1947.868)" fill="#00223d" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="15">NetBEUI</tspan></text>
+      <text id="b." transform="translate(223 1942.06)" fill="#fbf9f4" font-size="24" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="23">b.</tspan></text>
+    </g>
+    <g id="Grupo_33176" data-name="Grupo 33176" transform="translate(342 7540.94)">
+      <g transform="matrix(1, 0, 0, 1, -60, 1840.06)" filter="url(#Rectángulo_26469-5)">
+        <rect id="Rectángulo_26469-11" data-name="Rectángulo 26469" width="222" height="34" rx="10" transform="translate(272 100)" fill="#f9f9f9"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -60, 1840.06)" filter="url(#Rectángulo_26470-5)">
+        <rect id="Rectángulo_26470-11" data-name="Rectángulo 26470" width="39" height="34" rx="10" transform="translate(272 100)" fill="#21587b" opacity="0.8"/>
+      </g>
+      <text id="Apple_Talk" data-name="Apple Talk" transform="translate(259.946 1947.868)" fill="#00223d" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="15">Apple Talk</tspan></text>
+      <text id="d." transform="translate(223 1942.06)" fill="#fbf9f4" font-size="24" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="23">d.</tspan></text>
+    </g>
+    <g id="Grupo_33178" data-name="Grupo 33178" transform="translate(605 7540.94)">
+      <g transform="matrix(1, 0, 0, 1, -323, 1840.06)" filter="url(#Rectángulo_26469-6)">
+        <rect id="Rectángulo_26469-12" data-name="Rectángulo 26469" width="222" height="34" rx="10" transform="translate(535 100)" fill="#f9f9f9"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -323, 1840.06)" filter="url(#Rectángulo_26470-6)">
+        <rect id="Rectángulo_26470-12" data-name="Rectángulo 26470" width="39" height="34" rx="10" transform="translate(535 100)" fill="#21587b" opacity="0.8"/>
+      </g>
+      <text id="TCP_IP" data-name="TCP/IP" transform="translate(259.946 1947.868)" fill="#00223d" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="15">TCP/IP</tspan></text>
+      <text id="f." transform="translate(223 1942.06)" fill="#fbf9f4" font-size="24" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="23">f.</tspan></text>
+    </g>
+  </g>
+</svg>

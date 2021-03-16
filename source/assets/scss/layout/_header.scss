@@ -1,10 +1,9 @@
 .page-header {
-    background: $brand-color-dark;
-    position: relative;
-
+    background: rgb(255,255,255);
+    background: linear-gradient(83deg, rgba(255,255,255,1) 0%, rgba(210,230,238,1) 100%);
     .barra-dots {
         width: 240px;
-        max-width: 100%;
+        max-width: 70%;
     }
 
 }
@@ -33,10 +32,10 @@
 
 .curso-subtitulo {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 800px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: $primary;
+    color: #00223D;
 }
 
 .curso-descripcion {
@@ -45,7 +44,7 @@
 }
 
 .curso-imagen {
-    max-height: 350px;
+    max-height: 300px;
 }
 
 .theme-dark {
@@ -55,7 +54,8 @@
     .curso-subtitulo,
     .curso-titulo,
     .curso-descripcion {
-        color: $text-color-dark !important;
+        color: #00223D ;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     }
     
 }
@@ -72,8 +72,8 @@
 }
 
 .curso-titulo {
-    color: $text-color-dark !important;
-    font-weight: 700;
+    color:#37A3A5 !important;
+    font-weight: 1000;
     font-size: 2.5rem;
 }
 

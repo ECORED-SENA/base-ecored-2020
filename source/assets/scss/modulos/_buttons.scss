@@ -12,7 +12,7 @@ $font-size-lead: 18px;
   transition: bottom 400ms cubic-bezier(.68, -.55, .265, 1.55), opacity .3s, background-color .3s, border-color .3s;
   border-radius: 50%;
   background-color: rgba($black, .3);
-  color: $white !important;
+  color:blue !important;
   font-size: $font-size-lead;
   line-height: ($btn-height - 5);
   opacity: 0;
